@@ -5,9 +5,9 @@ date: March 12, 2018
 image: https://github.com/msr-peng/portfolio/blob/gh-pages/images/turtlebot-3.jpg
 ---
 
-![Follow Lane Line](https://github.com/msr-peng/portfolio/blob/gh-pages/images/Final%20Result/follow_lane.gif)
+![Follow Lane Line](../images/Final Result/follow_lane.gif)
 
-![Turtlebot 3](pictures/turtlebot-3.jpg)
+![Turtlebot 3](../images/turtlebot3-3.jpg)
 
 **I'm still work on this project to fulfill all the functionality of the robot as the project proposal. I'll update any progression of this project on time.**
 
