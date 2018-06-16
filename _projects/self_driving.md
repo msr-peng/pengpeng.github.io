@@ -7,6 +7,7 @@ image: http://unsplash.it/400?random
 
 # Self-Driving Turtlebot3 Based on Advanced Lane Line Finding and Traffic Sign Recognition
 
+![Follow Lane Line](https://github.com/msr-peng/portfolio/blob/gh-pages/images/Final%20Result/follow_lane.gif)
 
 ![Turtlebot 3](pictures/turtlebot-3.jpg)
 
