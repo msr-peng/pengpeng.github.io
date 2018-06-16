@@ -2,10 +2,8 @@
 layout: project
 title: Self-driving Turtlebot3 Based on Advanced Lane Line Following and Traffic Sign Recognition
 date: March 12, 2018
-image: http://unsplash.it/400?random
+image: https://github.com/msr-peng/portfolio/blob/gh-pages/images/turtlebot-3.jpg
 ---
-
-# Self-Driving Turtlebot3 Based on Advanced Lane Line Finding and Traffic Sign Recognition
 
 ![Follow Lane Line](https://github.com/msr-peng/portfolio/blob/gh-pages/images/Final%20Result/follow_lane.gif)
 
