@@ -5,6 +5,8 @@ date: March 12, 2018
 image: https://github.com/msr-peng/portfolio/blob/gh-pages/images/turtlebot-3.jpg
 ---
 
+![Test Image](https://github.com/msr-peng/Self-Driving-Turtlebot3/blob/master/pictures/Advanced%20Lane%20Line%20Finding/Camera%20Calibration.png)
+
 ![Follow Lane Line](../images/Final Result/follow_lane.gif)
 
 ![Turtlebot 3](../images/turtlebot3-3.jpg)
