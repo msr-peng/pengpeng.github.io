@@ -13,6 +13,8 @@ image: https://github.com/msr-peng/portfolio/blob/gh-pages/images/turtlebot-3.jp
 
 ![Turtlebot 3](../images/turtlebot-3.jpg)
 
+![Turtlebot 3](https://github.com/msr-peng/portfolio/blob/gh-pages/images/turtlebot-3.jpg)
+
 **I'm still work on this project to fulfill all the functionality of the robot as the project proposal. I'll update any progression of this project on time.**
 
 This project is based on Udacity's self-driving car nanodegree's 3 projects which I finished this term:
