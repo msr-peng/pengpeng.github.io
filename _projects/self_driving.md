@@ -7,9 +7,9 @@ image: https://github.com/msr-peng/portfolio/blob/gh-pages/images/turtlebot-3.jp
 
 ![Test Image](https://github.com/msr-peng/Self-Driving-Turtlebot3/blob/master/pictures/Advanced%20Lane%20Line%20Finding/Camera%20Calibration.png)
 
-![Follow Lane Line](../images/Final Result/follow_lane.gif)
+![Follow Lane Line](images/Final Result/follow_lane.gif)
 
-![Turtlebot 3](../images/turtlebot3-3.jpg)
+![Turtlebot 3](images/turtlebot3-3.jpg)
 
 **I'm still work on this project to fulfill all the functionality of the robot as the project proposal. I'll update any progression of this project on time.**
 

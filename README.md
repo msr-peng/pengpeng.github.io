@@ -1,6 +1,8 @@
 # MSR Student Portfolio Template
 
+![Turtlebot 3](images/turtlebot3-3.jpg)
 
+![Follow Lane Line](images/Final Result/follow_lane.gif)
 
 ## Jekyll overview
 
