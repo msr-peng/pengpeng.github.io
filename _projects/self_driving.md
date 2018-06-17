@@ -15,19 +15,19 @@ image: /portfolio/public/images/turtlebot-3.jpg
 ## Project Goal
 This project is going to build a elementary self-driving robot, which can follow the lane lines and recognize the traffic signs it face to, and appropriately respond to signs such as "stop", "decelerate", "U turn", "keep left", "keep right", "go straight".
 
-Here are the demo of final result:
+Here are the demos of final result:
 ### Keep Left
 ![Keep Left](/portfolio/public/images/Final Result/left.gif)
-
+     
 ### Keep Right
 ![Keep Right](/portfolio/public/images/Final Result/right.gif)
-
+     
 ### Stop
 ![Stop](/portfolio/public/images/Final Result/stop.gif)
-
+     
 ### U Turn
 ![U Turn](/portfolio/public/images/Final Result/U_turn.gif)
-
+     
 ## Project Setup
 The detector dataset is traffic sign sets(labeled 1) and non-traffic signs(labeled 2), with the following characteristics:
 * Images are 32 (width) x 32 (height) x 3 (RGB color channels)
@@ -76,12 +76,12 @@ I collected 20 images of chessboard from varying angle and distance served as ca
 **2. Thresholded Binary Image Based on Color Transforms and Gradients**
 Firstly, I implement a mask to get the region of road.
 The color of two lane lines are black and orange respectively. So I use low L channel in HLS to find black lane, and low B channel in RGB to find orange lane. In addition, to make the land finding mechanism more robust, I implement gradient threshold to filter out nearly vertical or horizontal lines, which are not likely to be lane lines. Here is the thresholded image.
-![Thresholded Binary Image](https://github.com/msr-peng/Self-Driving-Turtlebot3/blob/master/pictures/Advanced%20Lane%20Line%20Finding/Thresholded.png)
+![Thresholded Binary Image](/portfolio/public/images/Advanced Lane Line Finding/Thresholded.png)
 
 **3. Prespective Transform(birds-eye view)**
 Then I implement birds-eye-view transform by choose the transform boundary manually using
 `cv2.warpPerspective`
-![Perspective Transform](https://github.com/msr-peng/Self-Driving-Turtlebot3/blob/master/pictures/Advanced%20Lane%20Line%20Finding/Perspective%20Transform.png)
+![Perspective Transform](/portfolio/public/images/Advanced Lane Line Finding/Perspective Transform.png)
 Thus we can see the robot deviation and lane curvature by warped image directly! In addition, I also get the conversion relationship between distance in real world and pixels in warped image by measuring the size of the transform area. **ym_per_pixel** = 22.5/32000; **xm_per_pixel** = 17.5/32000 Which can be used in the following curvature calculation.
 
 **4. Identifying the Lane**
@@ -89,13 +89,13 @@ Thus we can see the robot deviation and lane curvature by warped image directly!
 **a. line finding methods: peaks in a histogram**
 After applying calibration, thresholding and perspective transform, to decide explicitly which pixels are part of the left lines or right lines, I take a histogram along all the columns in the lower half of the image. Then the two most prominent peaks in the histogram will be good indicators of the x-position of lane lines.
 
-![Histogram of Thresholded](https://github.com/msr-peng/Self-Driving-Turtlebot3/blob/master/pictures/Advanced%20Lane%20Line%20Finding/Histogram.png)
+![Histogram of Thresholded](/portfolio/public/images/Advanced Lane Line Finding/Histogram.png)
 
 **b. sliding windows search**
 
 I use that as a starting point for where to search for the lines. From that point, I then use a sliding window, placed around the line centers, to find and follow the lines up to the top of the frame. Moreover, after the first several video frame, once we know where the previous lines are, we can search the line for the next frame in a margin around the previous line position, instead of a blind search again.
 
-![Sliding Windows](https://github.com/msr-peng/Self-Driving-Turtlebot3/blob/master/pictures/Advanced%20Lane%20Line%20Finding/Sliding%20Windows.png)
+![Sliding Windows](/portfolio/public/images/Advanced Lane Line Finding/Sliding Windows.png)
 
 **5. Measuring Curvature**
 
@@ -103,24 +103,24 @@ I use that as a starting point for where to search for the lines. From that poin
 
 Before we measuring the curvature, we firstly need to use a second(or third, if multiple consecutive turn) order polynomial to fit the points set we get above.
 
-![Lane curve fit](https://github.com/msr-peng/Self-Driving-Turtlebot3/blob/master/pictures/Advanced%20Lane%20Line%20Finding/Polyfit.png)
+![Lane curve fit](/portfolio/public/images/Advanced Lane Line Finding/Polyfit.png)
 
 **b. curvature calculation**
 
 I get the curvature by pixel form following formula:
 
-![Curvature Calculation](https://github.com/msr-peng/Self-Driving-Turtlebot3/blob/master/pictures/Advanced%20Lane%20Line%20Finding/Curvature%20Calculation.png)
+![Curvature Calculation](/portfolio/public/images/Advanced Lane Line Finding/Curvature Calculation.png)
 
 Then according to the pixels to real world factors **ym_per_pixel** = 22.5/32000; **xm_per_pixel** = 17.5/32000, we can get the lane curvature in real world. In addition, we get the robot center deviation by two lanes’ x coordinates.
 After the calculation, I implemented an inverse perspective transform to mark the lane lines area.
 
-![Measurement Result](https://github.com/msr-peng/Self-Driving-Turtlebot3/blob/master/pictures/Advanced%20Lane%20Line%20Finding/Measurement%20result.png)
+![Measurement Result](/portfolio/public/images/Advanced Lane Line Finding/Measurement Result.png)
 
 **6. PID Controller**
 
 The cross-track error’s(CTE) definition just as above show. In this project, the CTE is exactly the same as center offset we figure out. We’ll make CTE and R_Curve served as the input of PID controller. It’s output would be the robot angular velocity.
 
-![CTE difiniiton](https://github.com/msr-peng/Self-Driving-Turtlebot3/blob/master/pictures/Advanced%20Lane%20Line%20Finding/CTE.jpg)
+![CTE definiiton](/portfolio/public/images/Advanced Lane Line Finding/CTE.jpg)
 
 ### Part 2. Traffic Sign Detection
 
@@ -128,7 +128,7 @@ The cross-track error’s(CTE) definition just as above show. In this project, t
 
 To select the traffic sign out from the lab background, we need to find some image feature which is exclusive to traffic sign. The color components is not doubtedly could be a good indicator, cauze traffic sign usually is a combination of white and blue or red. We can represent by color histogram. Another indicator is the special structure of traffic sign, and we can use histogram of gradient to represent it.
 
-![HOG Feature](https://github.com/msr-peng/Self-Driving-Turtlebot3/blob/master/pictures/Traffic%20Sign%20Detection/HOG%20Feature.png)
+![HOG Feature](/portfolio/public/images/Traffic Sign Detection/HOG Feature.png)
 
 Finally, I choose the combination of color and HOG features to feed the detector.
 
@@ -137,11 +137,9 @@ Finally, I choose the combination of color and HOG features to feed the detector
 As for the classifier, I choose a linear SVM to classify the traffic sign. Specifically, I’ll train the
 model from the [German Traffic Sign Dataset](http://benchmark.ini.rub.de/). It contains more than 20,000 traffic signs image in 32*32*3 size, which label as 1(traffic signs). In addition, I also collect more than 20,000 images in 32*32*3 in **MSR LAB** environment, which label as 0. I keep these two training dataset’s number of image balanced, to make the training result do not biased.
 
-![Dataset for Traffic Sign Detection(Sign & non-sign)](https://github.com/msr-peng/Self-Driving-Turtlebot3/blob/master/pictures/Traffic%20Sign%20Detection/Training%20Data.png)
+![Dataset for Traffic Sign Detection(Sign & non-sign)](/portfolio/public/images/Traffic Sign Detection/Training Data.png)
 
-I make 20% of original data as the test data by `train_test_split` in `sklearn.model_selection` module, here is the model performance:
-
-![SVC Accuracy](https://github.com/msr-peng/Self-Driving-Turtlebot3/blob/master/pictures/Traffic%20Sign%20Detection/Classifier%20Accuracy.png)
+I make 20% of original data as the test data by `train_test_split` in `sklearn.model_selection` module, and the accuracy of traffic sign detector arrive to **99.83%**
 
 **3. Multi-scale Sliding Windows Search**
 
@@ -152,13 +150,13 @@ Before we implement a brute sliding windows search, here are some tricks about t
 
 Finally, the sliding window we implement just as follow:
 
-![Multi-scale Sliding Window Search](https://github.com/msr-peng/Self-Driving-Turtlebot3/blob/master/pictures/Traffic%20Sign%20Detection/multi-scale%20window.png)
+![Multi-scale Sliding Window Search](/portfolio/public/images/Traffic Sign Detection/Multi-scale Window.png)
 
 **4. Multiple Detections & False Positives**
 
 After implement multi-scale sliding window search based on our trained classifier, we get the following result:
 
-![First Precess Result of the Detector](https://github.com/msr-peng/Self-Driving-Turtlebot3/blob/master/pictures/Traffic%20Sign%20Detection/false%20positive.png)
+![First Precess Result of the Detector](/portfolio/public/images/Traffic Sign Detection/False Positive.png)
 
 As we can see, we faced with two problems:
 - Multiple positive: multiple windows overlaps on the same traffic sign
@@ -170,7 +168,7 @@ To make a heat-map, I simply add “heat” (+=1) for all pixels within windows 
 
 I then adds “heat” to a map for a list of bonding boxes for the detections in images. To remove false positives, I reject areas by imposing a heat threshold. Finally, to figure out how many traffic signs in each video frame and which pixels belong to which traffic sgins, my solution is to use the `label()` funciton. The finally output is as follow:
 
-![Final Search Result within Heat-map](https://github.com/msr-peng/Self-Driving-Turtlebot3/blob/master/pictures/Traffic%20Sign%20Detection/Heatmap.png)
+![Final Search Result within Heat-map](/portfolio/public/images/Traffic Sign Detection/Heatmap.png)
 
 As we can see, after apply the heatmap, we successfully remove all false positives and combined all multiple positives.(although the middle two traffic signs are combined due to there are nearby each other, we can separate them once the window are far not square.)
 
@@ -183,17 +181,17 @@ This part, I build a deep CNN based on [German Traffic Sign Dataset](http://benc
 Before we feed the data into our model to train, we normalized the data, make it locate at the region [-0.5m +0.5], thus can shorten the training time highly.
 All 43 traffic sign is as follow:
 
-![All Sorts of Traffic Sign](https://github.com/msr-peng/Self-Driving-Turtlebot3/blob/master/pictures/Traffic%20Sign%20Classifier/Traffic%20Sign%20Sorts.png)
+![All Sorts of Traffic Sign](/portfolio/public/images/Traffic Sign Classifier/Traffic Sign Sorts.png)
 
 The distribution of the dataset is as follow:
 
-![Unbalanced Distribution of Dataset](https://github.com/msr-peng/Self-Driving-Turtlebot3/blob/master/pictures/Traffic%20Sign%20Classifier/Dataset%20Distribition.png)
+![Unbalanced Distribution of Dataset](/portfolio/public/images/Traffic Sign Classifier/Dataset Distribition.png)
 
 **2. Deep CNN Architecture**
 
 As for the Convolutional Network structure, I refer [Yann LeCun's this paper](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf). The networks made up with 3 convolutional neural network, has 3*3 kernel, its depth of the next layer double, and has ReLU to serve as activation function. Each CNN has max 2*2 pooling. It has 3 layers of fully-connected layers, and generate 43 result at final layer.
 
-![Deep CNN Architecture](https://github.com/msr-peng/Self-Driving-Turtlebot3/blob/master/pictures/Traffic%20Sign%20Classifier/CNN%20Architecture.png)
+![Deep CNN Architecture](/portfolio/public/images/Traffic Sign Classifier/CNN Architecture.png)
 
 **3. Dropout**
 
@@ -204,15 +202,15 @@ To improve the reliability of the model, I implement dropout algorithm. It can i
 As we can see in the dataset distribution, 43 sort of data has much unbalanced quantity. This can easily lead our model’s prediction biased to certain sort of model. So I decided to implement data augment to balance the data. Moreover, to make the model more robust, I provide new image in different environment such as translation, rotation, transformation, blur and illuminance. I implement these effect respectively by `cv2.warpAffine` ,`cv2.GaussianBlur` and `cv2.LUT`.
 Some example of new data is as follow:
 
-![Effect of Data Augment in Different Ways](https://github.com/msr-peng/Self-Driving-Turtlebot3/blob/master/pictures/Traffic%20Sign%20Classifier/Data%20Augment.png)
+![Effect of Data Augment in Different Ways](/portfolio/public/images/Traffic Sign Classifier/Data Augment.png)
 
 **5. Model Performance**
 
 Here is the loss function value history through 100 training epochs:
 
-![Loss function of training and validation dataset throughout the training](https://github.com/msr-peng/Self-Driving-Turtlebot3/blob/master/pictures/Traffic%20Sign%20Classifier/Loss%20History.png)
+![Loss function of training and validation dataset throughout the training](/portfolio/public/images/Traffic Sign Classifier/Loss History.png)
 
-![Precision & Recall for All of Traffic Sign's Sorts](https://github.com/msr-peng/Self-Driving-Turtlebot3/blob/master/pictures/Traffic%20Sign%20Classifier/Precision%20%26%20Recall.png)
+![Precision & Recall for All of Traffic Sign's Sorts](/portfolio/public/images/Traffic Sign Classifier/Precision & Recall.png)
 
 From above result, we know that although we get good classifier performance(96.1 %), the validation loss rise slightly as the training loss decrease nearly to zero, which release that our model is a little overfitting.
 
@@ -220,9 +218,9 @@ From above result, we know that although we get good classifier performance(96.1
 
 After I fusion the traffic sign detection & classifier together, here is two test image:
 
-![Final Output for Traffic Sign Recognition 1](https://github.com/msr-peng/Self-Driving-Turtlebot3/blob/master/pictures/Traffic%20Sign%20Classifier/output.png)
+![Final Output for Traffic Sign Recognition 1](/portfolio/public/images/Traffic Sign Classifier/Output_1.png)
 
-![Final Output for Traffic Sign Recognition 2](https://github.com/msr-peng/Self-Driving-Turtlebot3/blob/master/pictures/Traffic%20Sign%20Classifier/output2.png)
+![Final Output for Traffic Sign Recognition 2](/portfolio/public/images/Traffic Sign Classifier/Output_2.png)
 
 ### Stretch Goal
 
