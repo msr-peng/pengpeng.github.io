@@ -9,7 +9,7 @@ image: https://github.com/msr-peng/portfolio/blob/gh-pages/images/turtlebot-3.jp
 
 ![Follow Lane Line](images/Final Result/follow_lane.gif)
 
-![Turtlebot 3](images/turtlebot3-3.jpg)
+![Turtlebot 3](images/turtlebot-3.jpg)
 
 **I'm still work on this project to fulfill all the functionality of the robot as the project proposal. I'll update any progression of this project on time.**
 
@@ -28,7 +28,7 @@ The detector dataset is traffic sign sets(labeled 1) and non-traffic signs(label
 * Training set to test set is 0.8 : 0.2
 
 The classifier dataset is plit into training, test and validation sets, with the following characteristics:
-* Images are 32 (width) x 32 (height) x 3 (RGB color channels)  
+* Images are 32 (width) x 32 (height) x 3 (RGB color channels)
 * Training set is composed of 39209 images 
 * Validation set is composed of 2526 images
 * Test set is composed of 10104 images
