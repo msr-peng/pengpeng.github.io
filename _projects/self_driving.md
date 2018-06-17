@@ -5,25 +5,28 @@ date: March 12, 2018
 image: /portfolio/public/images/turtlebot-3.jpg
 ---
 
-![Test Image](https://github.com/msr-peng/Self-Driving-Turtlebot3/blob/master/pictures/Advanced%20Lane%20Line%20Finding/Camera%20Calibration.png)
-
-![Follow Lane Line](images/Final Result/follow_lane.gif)
-
-![Turtlebot 3](/portfolio/public/images/Final Result/U_turn.gif)
-
-![Turtlebot 3](../images/turtlebot-3.jpg)
-
-![Turtlebot 3](https://github.com/msr-peng/portfolio/blob/gh-pages/images/turtlebot-3.jpg)
-
-**I'm still work on this project to fulfill all the functionality of the robot as the project proposal. I'll update any progression of this project on time.**
-
-This project is based on Udacity's self-driving car nanodegree's 3 projects which I finished this term:
+**Notice:** This project is based on Udacity's self-driving car nanodegree's 3 projects which I finished this term:
 - Traffic Sign Classifier Project
 - Advan Lane Finding Project
 - Vehicle Detection and Tracking Project
 
+![Follow Lane Line](/portfolio/public/images/Final Result/follow_lane.gif)
+
 ## Project Goal
-This project is going to build a elementary self-driving robot, which can follow the lane lines and recognize the traffic signs it face to, and thus do corresponding performance.
+This project is going to build a elementary self-driving robot, which can follow the lane lines and recognize the traffic signs it face to, and appropriately respond to signs such as "stop", "decelerate", "U turn", "keep left", "keep right", "go straight".
+
+Here are the demo of final result:
+### Keep Left
+![Keep Left](/portfolio/public/images/Final Result/left.gif)
+
+### Keep Right
+![Keep Right](/portfolio/public/images/Final Result/right.gif)
+
+### Stop
+![Stop](/portfolio/public/images/Final Result/stop.gif)
+
+### U Turn
+![U Turn](/portfolio/public/images/Final Result/U_turn.gif)
 
 ## Project Setup
 The detector dataset is traffic sign sets(labeled 1) and non-traffic signs(labeled 2), with the following characteristics:
@@ -68,7 +71,7 @@ I decided to implement a PID controller to make the robot follow the lane lines.
 
 **1. Camera Calibration**
 I collected 20 images of chessboard from varying angle and distance served as camera calibration input, feed them into `cv2.findChessboardCorners` to get object points and image points, then feed the result into `cv2.calibrateCamera` to get the Camera Matrix. Here is the result after distortion correction.
-![Camera Calibration & Distortion Correction](https://github.com/msr-peng/Self-Driving-Turtlebot3/blob/master/pictures/Advanced%20Lane%20Line%20Finding/Camera%20Calibration.png)
+![Camera Calibration & Distortion Correction](/portfolio/public/images/Advanced Lane Line Finding/Camera Calibration.png)
 
 **2. Thresholded Binary Image Based on Color Transforms and Gradients**
 Firstly, I implement a mask to get the region of road.
