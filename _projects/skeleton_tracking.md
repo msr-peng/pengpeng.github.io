@@ -2,7 +2,7 @@
 layout: project
 title: Modern Skeleton Tracking Benchmarking
 date: Jun 19, 2018
-image: /portfolio/public/images/Skeleton Tracking/SkeletonTracing1.jpg
+image: /portfolio/public/images/Skeleton Tracking/SkeletonTracing.jpg
 ---
 
 ## Project Goal
