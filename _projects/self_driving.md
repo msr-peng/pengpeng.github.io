@@ -9,8 +9,8 @@ image: /portfolio/public/images/turtlebot-3.jpg
 This project is going to build a elementary self-driving robot, which can follow the lane lines and recognize the traffic signs it face to, and appropriately respond to signs such as "stop", "decelerate", "U turn", "keep left", "keep right", "go straight".
 
 Here are the demos of final result:
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title></title>
@@ -21,49 +21,38 @@ Here are the demos of final result:
 <!-- 上方内容 -->
   <div class="box">
       <div class="head">
-         <span>热门</span>
-         <a href="#">更多></a>
       </div>
   <!-- 图片内容 -->  
   <ul>
     <li>
       <div class="deatil">
-         <h2>夕阳中海</h2>
-         <p>在夕阳下泛着橘色的大海和山</p>
-         <a href="#">开始进入</a>
+         <h2>Keep Left</h2>
       </div>
-      <img src="/portfolio/public/images/Final Result/left.gif" width="160px" height="240px" alt=""/>
+      <img src="/portfolio/public/images/Final Result/left.gif" width="240px" height="240px" alt=""/>
     </li>
 
     <!--第二个图片-->
   <li>
       <div class="deatil">
-         <h2>山清水秀</h2>
-         <p>秀丽的河山</p>
-         <a href="#">点击进入</a>
+         <h2>Keep Right</h2>
       </div>
-      <img src="/portfolio/public/images/Final Result/right.gif" width="160px" height="240px" alt=""/>
+      <img src="/portfolio/public/images/Final Result/right.gif" width="240px" height="240px" alt=""/>
     </li>
       <!--第3个图片-->
   <li>
       <div class="deatil">
-         <h2>平静的海</h2>
-         <p>紫色的平静的大海</p>
-         <a href="#">点击进入</a>
+         <h2>Stop</h2>
       </div>
-      <img src="/portfolio/public/images/Final Result/stop.gif" width="160px" height="240px" alt=""/>
+      <img src="/portfolio/public/images/Final Result/stop.gif" width="240px" height="240px" alt=""/>
     </li>
 
       <!--第4个图片-->
   <li>
       <div class="deatil">
-         <h2>沙滩大海</h2>
-         <p>海浪拍打沙滩，偶尔有吹上来小螃蟹</p>
-         <a href="#">点击进入</a>
+         <h2>U-Turn</h2>
       </div>
-      <img src="/portfolio/public/images/Final Result/U_turn.gif" width="160px" height="240px" alt=""/>
+      <img src="/portfolio/public/images/Final Result/U_turn.gif" width="240px" height="240px" alt=""/>
     </li>
-
 
   </ul>  
   </div>
