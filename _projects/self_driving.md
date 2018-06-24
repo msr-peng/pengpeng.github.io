@@ -9,6 +9,11 @@ image: /portfolio/public/images/turtlebot-3.jpg
 This project is going to build a elementary self-driving robot, which can follow the lane lines and recognize the traffic signs it face to, and appropriately respond to signs such as "stop", "decelerate", "U turn", "keep left", "keep right", "go straight".
 
 Here are the demos of final result:
+<figure class="half">
+	<img src="/portfolio/public/images/Final Result/left.gif">
+	<img src="/portfolio/public/images/Final Result/right.gif">
+</figure>
+
 ### Keep Left
 ![Keep Left](/portfolio/public/images/Final Result/left.gif)
      

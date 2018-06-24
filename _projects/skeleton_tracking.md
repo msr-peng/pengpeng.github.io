@@ -9,7 +9,7 @@ image: /portfolio/public/images/Skeleton Tracking/SkeletonTracing.jpg
 This project is going to explore a avriety new technologies about skeleton tracking, and to benchmard their performance in terms of accuracy, computational effort, and hardware requirements. And then develop user manuals and tutorials to accompany the results.
 
 ## Selected Solutions of skeleton tracking
-**XBOX 360 Kinect + OpenNi_tracker + NITE + Linux**
+**1. XBOX 360 Kinect + OpenNi_tracker + NITE + Linux**
      
 Recommand Operating System and Architectures;
 - Ubuntu 14.04 or 16.04
@@ -30,7 +30,8 @@ Kinect V1 can simultaneously track 2 persons within 20 key joints points.
 This solution can given the skeleton tracking result as `tf` data format in ROS, and visualize corresponding joint coordinate in `rviz`.
 ![Real-time Person](/portfolio/public/images/Skeleton Tracking/skeleton_1.gif)
 
-Comparison between official development package and unofficial development package for **Kinect v1**:
+Comparison between official development package and unofficial development package for Kinect v1:
+     
 Official SDK:
 Pros:
 - Audio support.
@@ -52,9 +53,9 @@ Cons:
 - It only works fine when peopel in a appropriate distance from Kinect(larger than two meters).
 - The tracking result not robust when person's limbs overlap highly.
 
-**Xtion PRO LIVE + OpenNI + NITEv2 + Linux**
+**2. Xtion PRO LIVE + OpenNI + NITEv2 + Linux**
 
-**XBOX ONE Kinect + Microsoft SDK + OpenCV + Windows**
+**3. XBOX ONE Kinect + Microsoft SDK + OpenCV + Windows**
      
 Supported Operating Systems and Architectures:
 - Windows 8 (x64)
@@ -78,7 +79,7 @@ I extracted the color frame streams and the real-time data of skeleton tracking 
 ![Kinect v2 result](/portfolio/public/images/Skeleton Tracking/skeleton_3.gif)
 My next step is to implement the interaction between Windows and Linux, and finally realize the 3-D skeleton reconstruction on Rviz. A potential solution to realize the interatcion between Windows and ROS on Linux is by [rosserial_windows](http://wiki.ros.org/rosserial_windows) package.
 
-**OpenPose + RGBD Camera/FLIR Camera + Windows/Linux**
+**4. OpenPose + RGBD Camera/FLIR Camera + Windows/Linux**
 [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) is the first real-time multi-person system to jointly detect human body, hand, and facial keypoints(in total 130 keypoints) on single images.
 It can give robust skeleton tracking result given RGB video about real-world persons or even animation person:
 ![Real-time Person](/portfolio/public/images/Skeleton Tracking/skeleton_4_1.gif)
