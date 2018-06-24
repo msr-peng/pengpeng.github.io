@@ -10,27 +10,24 @@ This project is going to build a elementary self-driving robot, which can follow
 
 Here are the demos of final result:
 
+<html>
 <body>
         <table border="1">
             <tr>
-                <caption>Keep Left</caption>
                 <td>
                     <img src="/portfolio/public/images/Final Result/left.gif" width="240px" height="240px" alt="" />
                 </td>
 
-                <caption>Keep Right</caption>
                 <td>
                     <img src="/portfolio/public/images/Final Result/right.gif" width="240px" height="240px" alt="" />
                 </td>
             </tr>
 
             <tr>
-                <caption>Stop</caption>
                 <td>
                     <img src="/portfolio/public/images/Final Result/stop.gif" width="240px" height="240px" alt="" />
                 </td>
 
-                <caption>U-turn</caption>
                 <td>
                     <img src="/portfolio/public/images/Final Result/U_turn.gif" width="240px" height="240px" alt="" />
                 </td>
