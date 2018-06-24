@@ -5,13 +5,6 @@ date: March 12, 2018
 image: /portfolio/public/images/turtlebot-3.jpg
 ---
 
-**Notice:** This project is based on Udacity's self-driving car nanodegree's 3 projects which I finished this term:
-- Traffic Sign Classifier Project
-- Advan Lane Finding Project
-- Vehicle Detection and Tracking Project
-
-![Follow Lane Line](/portfolio/public/images/Final Result/follow_lane.gif)
-
 ## Project Goal
 This project is going to build a elementary self-driving robot, which can follow the lane lines and recognize the traffic signs it face to, and appropriately respond to signs such as "stop", "decelerate", "U turn", "keep left", "keep right", "go straight".
 
@@ -116,8 +109,8 @@ Before we measuring the curvature, we firstly need to use a second(or third, if 
 I get the curvature by pixel form following formula:
 
 \begin{equation}
-f(y) = Ay^2 + By + C <br>
-R_{curve} = \frac{(1+(\frac{dx}{dy})^2)^{3/2}}{\frac{d^2x}{dy^2}} <br>
+f(y) = Ay^2 + By + C; \hspace{7mm}
+R_{curve} = \frac{(1+(\frac{dx}{dy})^2)^{3/2}}{\frac{d^2x}{dy^2}}; \hspace{7mm}
 R_{curve} = \frac{(1+(2Ay+B)^2)^{3/2}}{2A}
 \end{equation}
 
@@ -253,4 +246,10 @@ The traffic sign detector & classifier can successfully recognize all 43 classes
 ### Stretch Goal
 
 Now I make the TurtleBot3 work robustly in **Northwestern MSR LAB** environment. My next step is to realize the **visual odometry** aided by **semantic segmentation** based on the data returned by the fisheye camera and the lidar.
+
+### Reference
+Udacity's self-driving car nanodegree's 3 projects:
+- Traffic Sign Classifier Project
+- Advan Lane Finding Project
+- Vehicle Detection and Tracking Project
 

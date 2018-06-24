@@ -75,7 +75,7 @@ Software Requirements:
 Kinect v2 can simultaneously track 6 persons within 25 key joints points, which is much better than Kinect v1. Moreover, it has more roboust skeleton tracking result of signle person than Kinect v1.
 This solution is developed by the combination of [Kinect for Windows SDK v2 C++ API](https://docs.microsoft.com/en-us/previous-versions/windows/kinect/hh855364(v%3dieb.10)) and [OpenCV 3.4.1](https://opencv.org/opencv-3-4-1.html) library, in [Visual Studio 2017](https://visualstudio.microsoft.com/zh-hans/vs/?rr=https%3A%2F%2Fwww.google.com%2F) IDE.
 I extracted the color frame streams and the real-time data of skeleton tracking from Windows SDK v2 C++ API, and then drew the skeleton lines on color image streams within OpenCV. Here is the demo(The C++ source code is [here](https://github.com/KHeresy/KinectForWindows2Sample/blob/v2-naming/08cv_Body/cvBody.cpp). PS: window at the top left corner is the original depth & skeleton tracking result show in Kinect Studio v2.0):
-![Kinect v2 result]()
+![Kinect v2 result](/portfolio/public/images/Skeleton Tracking/skeleton_3.gif)
 My next step is to implement the interaction between Windows and Linux, and finally realize the 3-D skeleton reconstruction on Rviz. A potential solution to realize the interatcion between Windows and ROS on Linux is by [rosserial_windows](http://wiki.ros.org/rosserial_windows) package.
 
 **OpenPose + RGBD Camera/FLIR Camera + Windows/Linux**
