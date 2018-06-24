@@ -116,10 +116,8 @@ Before we measuring the curvature, we firstly need to use a second(or third, if 
 I get the curvature by pixel form following formula:
 
 \begin{equation}
-f(y) = Ay^2 + By + C \\ 
-     
-R_{curve} = \frac{(1+(\frac{dx}{dy})^2)^{3/2}}{\frac{d^2x}{dy^2}} \\
-     
+f(y) = Ay^2 + By + C <br>
+R_{curve} = \frac{(1+(\frac{dx}{dy})^2)^{3/2}}{\frac{d^2x}{dy^2}} <br>
 R_{curve} = \frac{(1+(2Ay+B)^2)^{3/2}}{2A}
 \end{equation}
 

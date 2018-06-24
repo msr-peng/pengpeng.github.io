@@ -10,6 +10,7 @@ This project is going to explore a avriety new technologies about skeleton track
 
 ## Selected Solutions of skeleton tracking
 **XBOX 360 Kinect + OpenNi_tracker + NITE + Linux**
+     
 Recommand Operating System and Architectures;
 - Ubuntu 14.04 or 16.04
 
@@ -54,6 +55,7 @@ Cons:
 **Xtion PRO LIVE + OpenNI + NITEv2 + Linux**
 
 **XBOX ONE Kinect + Microsoft SDK + OpenCV + Windows**
+     
 Supported Operating Systems and Architectures:
 - Windows 8 (x64)
 - Windows 10 (x64)
