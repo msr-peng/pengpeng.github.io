@@ -11,20 +11,26 @@ This project is going to build a elementary self-driving robot, which can follow
 Here are the demos of final result:
 
 <body>
-        <table>
+        <table border="1">
             <tr>
+                <caption>Keep Left</caption>
                 <td>
                     <img src="/portfolio/public/images/Final Result/left.gif" width="240px" height="240px" alt="" />
                 </td>
 
+                <caption>Keep Right</caption>
                 <td>
                     <img src="/portfolio/public/images/Final Result/right.gif" width="240px" height="240px" alt="" />
                 </td>
+            </tr>
 
+            <tr>
+                <caption>Stop</caption>
                 <td>
                     <img src="/portfolio/public/images/Final Result/stop.gif" width="240px" height="240px" alt="" />
                 </td>
 
+                <caption>U-turn</caption>
                 <td>
                     <img src="/portfolio/public/images/Final Result/U_turn.gif" width="240px" height="240px" alt="" />
                 </td>
@@ -32,20 +38,6 @@ Here are the demos of final result:
         </table>
 </body>
 </html>
-
-<img src="/portfolio/public/images/Final Result/U_turn.gif" width="240px" height="240px"
-
-### Keep Left
-![Keep Left](/portfolio/public/images/Final Result/left.gif)
-     
-### Keep Right
-![Keep Right](/portfolio/public/images/Final Result/right.gif)
-     
-### Stop
-![Stop](/portfolio/public/images/Final Result/stop.gif)
-     
-### U Turn
-![U Turn](/portfolio/public/images/Final Result/U_turn.gif)
      
 ## Project Setup
 The detector dataset is traffic sign sets (labeled 1) and non-traffic signs (labeled 2), with the following characteristics:
