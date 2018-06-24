@@ -10,54 +10,30 @@ This project is going to build a elementary self-driving robot, which can follow
 
 Here are the demos of final result:
 
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title></title>
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
-</head>
-
 <body>
-<!-- 上方内容 -->
-  <div class="box">
-      <div class="head">
-      </div>
-  <!-- 图片内容 -->  
-  <ul>
-    <li>
-      <div class="deatil">
-         <h2>Keep Left</h2>
-      </div>
-      <img src="/portfolio/public/images/Final Result/left.gif" width="240px" height="240px" alt=""/>
-    </li>
+        <table>
+            <tr>
+                <td>
+                    <img src="/portfolio/public/images/Final Result/left.gif" width="240px" height="240px" alt="" />
+                </td>
 
-    <!--第二个图片-->
-  <li>
-      <div class="deatil">
-         <h2>Keep Right</h2>
-      </div>
-      <img src="/portfolio/public/images/Final Result/right.gif" width="240px" height="240px" alt=""/>
-    </li>
-      <!--第3个图片-->
-  <li>
-      <div class="deatil">
-         <h2>Stop</h2>
-      </div>
-      <img src="/portfolio/public/images/Final Result/stop.gif" width="240px" height="240px" alt=""/>
-    </li>
+                <td>
+                    <img src="/portfolio/public/images/Final Result/right.gif" width="240px" height="240px" alt="" />
+                </td>
 
-      <!--第4个图片-->
-  <li>
-      <div class="deatil">
-         <h2>U-Turn</h2>
-      </div>
-      <img src="/portfolio/public/images/Final Result/U_turn.gif" width="240px" height="240px" alt=""/>
-    </li>
+                <td>
+                    <img src="/portfolio/public/images/Final Result/stop.gif" width="240px" height="240px" alt="" />
+                </td>
 
-  </ul>  
-  </div>
+                <td>
+                    <img src="/portfolio/public/images/Final Result/U_turn.gif" width="240px" height="240px" alt="" />
+                </td>
+            </tr>
+        </table>
 </body>
 </html>
+
+<img src="/portfolio/public/images/Final Result/U_turn.gif" width="240px" height="240px"
 
 ### Keep Left
 ![Keep Left](/portfolio/public/images/Final Result/left.gif)
