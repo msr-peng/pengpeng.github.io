@@ -8,28 +8,28 @@ image: /portfolio/public/images/turtlebot-3.jpg
 ## Project Goal
 This project is going to build a elementary self-driving robot, which can follow the lane lines and recognize the traffic signs it face to, and appropriately respond to signs such as "stop", "decelerate", "U turn", "keep left", "keep right", "go straight".
 
-Here are the demos of final result:
+Here are the demos of final result("Keep Left", "Keep RIght", "Stop", "U-turn"):
 
 <html>
 <body>
         <table border="1">
             <tr>
                 <td>
-                    <img src="/portfolio/public/images/Final Result/left.gif" width="240px" height="240px" alt="" />
+                    <img src="/portfolio/public/images/Final Result/left.gif" width="360px" height="360px" alt="" />
                 </td>
 
                 <td>
-                    <img src="/portfolio/public/images/Final Result/right.gif" width="240px" height="240px" alt="" />
+                    <img src="/portfolio/public/images/Final Result/right.gif" width="360px" height="360px" alt="" />
                 </td>
             </tr>
 
             <tr>
                 <td>
-                    <img src="/portfolio/public/images/Final Result/stop.gif" width="240px" height="240px" alt="" />
+                    <img src="/portfolio/public/images/Final Result/stop.gif" width="360px" height="360px" alt="" />
                 </td>
 
                 <td>
-                    <img src="/portfolio/public/images/Final Result/U_turn.gif" width="240px" height="240px" alt="" />
+                    <img src="/portfolio/public/images/Final Result/U_turn.gif" width="360px" height="360px" alt="" />
                 </td>
             </tr>
         </table>
