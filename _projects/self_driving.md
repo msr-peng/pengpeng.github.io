@@ -29,9 +29,9 @@ Here are the demos of final result:
 ![U Turn](/portfolio/public/images/Final Result/U_turn.gif)
      
 ## Project Setup
-The detector dataset is traffic sign sets(labeled 1) and non-traffic signs(labeled 2), with the following characteristics:
+The detector dataset is traffic sign sets (labeled 1) and non-traffic signs (labeled 2), with the following characteristics:
 * Images are 32 (width) x 32 (height) x 3 (RGB color channels)
-* Traffic sign set is composed of 26639 images, non-traffic sign(normal **MSR LAB** images) is composed of 25500 images
+* Traffic sign set is composed of 26639 images, non-traffic sign (normal **MSR LAB** images) is composed of 25500 images
 * Training set to test set is 0.8 : 0.2
 
 The classifier dataset is plit into training, test and validation sets, with the following characteristics:
@@ -117,6 +117,12 @@ I get the curvature by pixel form following formula:
      
 ![Curvature Calculation](/portfolio/public/images/Advanced Lane Line Finding/Curvature Calculation.png)
 
+\begin{equation}
+f(y) = Ay^2 + By + C \\
+R_{curve} = \frac{(1+(\frac{dx}{dy})^2)^{3/2}}{\frac{d^2x}{dy^2}} \\
+R_{curve} = \frac{(1+(2Ay+B)^2)^{3/2}}{2A}
+\end{equation}
+
 Then according to the pixels to real world factors **ym_per_pixel** = 22.5/32000; **xm_per_pixel** = 17.5/32000, we can get the lane curvature in real world. In addition, we get the robot center deviation by two lanes’ x coordinates.
 After the calculation, I implemented an inverse perspective transform to mark the lane lines area.
      
@@ -124,7 +130,7 @@ After the calculation, I implemented an inverse perspective transform to mark th
 
 **6. PID Controller**
 
-The cross-track error’s(CTE) definition just as above show. In this project, the CTE is exactly the same as center offset we figure out. We’ll make CTE and R_Curve served as the input of PID controller. It’s output would be the robot angular velocity.
+The cross-track error’s (CTE) definition just as above show. In this project, the CTE is exactly the same as center offset we figure out. We’ll make CTE and R_Curve served as the input of PID controller. It’s output would be the robot angular velocity.
      
 ![CTE definiiton](/portfolio/public/images/Advanced Lane Line Finding/CTE.jpg)
 
@@ -176,7 +182,7 @@ I then adds “heat” to a map for a list of bonding boxes for the detections i
      
 ![Final Search Result within Heat-map](/portfolio/public/images/Traffic Sign Detection/Heatmap.png)
 
-As we can see, after apply the heatmap, we successfully remove all false positives and combined all multiple positives.(although the middle two traffic signs are combined due to there are nearby each other, we can separate them once the window are far not square.)
+As we can see, after apply the heatmap, we successfully remove all false positives and combined all multiple positives. (although the middle two traffic signs are combined due to there are nearby each other, we can separate them once the window are far not square.)
 
 ### Part 3. Traffic Sign Classifier
 
@@ -218,7 +224,7 @@ Here is the loss function value history through 100 training epochs:
      
 ![Precision & Recall for All of Traffic Sign's Sorts](/portfolio/public/images/Traffic Sign Classifier/Precision & Recall.png)
 
-From above result, we know that although we get good classifier performance(96.1 %), the validation loss rise slightly as the training loss decrease nearly to zero, which release that our model is a little overfitting.
+From above result, we know that although we get good classifier performance (96.1 %), the validation loss rise slightly as the training loss decrease nearly to zero, which release that our model is a little overfitting.
 
 **6. Performance of Traffic Sign Recognition (Detection & Classification)**
 
