@@ -114,12 +114,12 @@ Before we measuring the curvature, we firstly need to use a second(or third, if 
 **b. curvature calculation**
 
 I get the curvature by pixel form following formula:
-     
-![Curvature Calculation](/portfolio/public/images/Advanced Lane Line Finding/Curvature Calculation.png)
 
 \begin{equation}
-f(y) = Ay^2 + By + C \\
+f(y) = Ay^2 + By + C \\ 
+     
 R_{curve} = \frac{(1+(\frac{dx}{dy})^2)^{3/2}}{\frac{d^2x}{dy^2}} \\
+     
 R_{curve} = \frac{(1+(2Ay+B)^2)^{3/2}}{2A}
 \end{equation}
 

@@ -11,7 +11,7 @@ This project is going to explore a avriety new technologies about skeleton track
 ## Selected Solutions of skeleton tracking
 **XBOX 360 Kinect + OpenNi_tracker + NITE + Linux**
 Recommand Operating System and Architectures;
-- Ubuntu
+- Ubuntu 14.04 or 16.04
 
 Recommended Hardware Configuration:
 - 32-bit (x86) or 64-bit (x64) processor
