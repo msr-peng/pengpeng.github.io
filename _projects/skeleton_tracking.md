@@ -44,6 +44,8 @@ Pros:
 - Matching RGB image and depth image.
 - Including gesture recognition and tracking functionality.
 
+Pros & Cons for solution 1:
+     
 Pros:
 - Little computational requirements.
 - High frequency of refreshment of the tracking result and little latency.
