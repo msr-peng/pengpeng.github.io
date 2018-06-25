@@ -76,4 +76,4 @@ Moreover, we will be using Python 2.7 with Tensorflow and OpenCV to write our co
 - Image Stream Preprocess
 - Traffic Sign Behavior Realization
 
-If you want to see the details of each steps and the python source code, please click [here](https://github.com/msr-peng/Self-Driving-Turtlebot3).
+If you want to see the details of each steps and the python source code, please click [here](https://github.com/msr-peng/Self_Driving_TurtleBot3).
