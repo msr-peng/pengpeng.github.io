@@ -44,7 +44,7 @@ Pros:
 - Matching RGB image and depth image.
 - Including gesture recognition and tracking functionality.
 
-Pros & Cons for solution 1:
+Evaluation of Solution 1:
      
 Pros:
 - Little computational requirements.
@@ -56,6 +56,7 @@ Cons:
 - The tracking result not robust when person's limbs overlap highly.
 
 **2. Xtion PRO LIVE + OpenNI2 + NITEv2 + Linux**
+     
 Still work on to make OpenNI2 and NITE2 work compatiblely with Xtion PRO LIVE.
 
 **3. XBOX ONE Kinect + Microsoft SDK + OpenCV + Windows**
@@ -88,6 +89,7 @@ It can give robust skeleton tracking result given RGB video about real-world per
 ![Real-time Person](/portfolio/public/images/Skeleton Tracking/skeleton_4_1.gif)
 
 ![Animation Person](/portfolio/public/images/Skeleton Tracking/skeleton_4_2.gif)
+Evaluation of Solution 4:
 Pros:
 - It can tracking multiple persons.
 - Skeleton tracking result is pretty robust to varying environmental conditions.(limbs overlap, lighting, clothing).
