@@ -55,7 +55,8 @@ Cons:
 - It only works fine when peopel in a appropriate distance from Kinect(larger than two meters).
 - The tracking result not robust when person's limbs overlap highly.
 
-**2. Xtion PRO LIVE + OpenNI + NITEv2 + Linux**
+**2. Xtion PRO LIVE + OpenNI2 + NITEv2 + Linux**
+Still can not work OpenNI2 and NITE2 work compatiblely with Xtion PRO LIVE.
 
 **3. XBOX ONE Kinect + Microsoft SDK + OpenCV + Windows**
      
