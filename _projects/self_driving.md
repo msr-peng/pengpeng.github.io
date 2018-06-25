@@ -49,7 +49,7 @@ The classifier dataset is plit into training, test and validation sets, with the
 * Test set is composed of 10104 images
 * There are 43 classes (e.g. Speed Limit 20km/h, No entry, Bumpy road, etc.)
 
-Moreover, we will be using Python 2.7 with Tensorflow and OpenCV to write our code. And then drive the robot based on ROS platform.
+I used Python 2.7 with Tensorflow and OpenCV to write my code. And then drive the robot based on ROS platform.
 
 ## Project Architecture
 **Advanced Lane Finding**
