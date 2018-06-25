@@ -15,21 +15,21 @@ Here are the demos of final result("Keep Left", "Keep RIght", "Stop", "U-turn"):
         <table border="1">
             <tr>
                 <td>
-                    <img src="/portfolio/public/images/Final Result/left.gif" width="360px" height="360px" alt="" />
+                    <img src="/portfolio/public/images/Final Result/left.gif" width="300px" height="300px" alt="" />
                 </td>
 
                 <td>
-                    <img src="/portfolio/public/images/Final Result/right.gif" width="360px" height="360px" alt="" />
+                    <img src="/portfolio/public/images/Final Result/right.gif" width="300px" height="300px" alt="" />
                 </td>
             </tr>
 
             <tr>
                 <td>
-                    <img src="/portfolio/public/images/Final Result/stop.gif" width="360px" height="360px" alt="" />
+                    <img src="/portfolio/public/images/Final Result/stop.gif" width="300px" height="300px" alt="" />
                 </td>
 
                 <td>
-                    <img src="/portfolio/public/images/Final Result/U_turn.gif" width="360px" height="360px" alt="" />
+                    <img src="/portfolio/public/images/Final Result/U_turn.gif" width="300px" height="300px" alt="" />
                 </td>
             </tr>
         </table>
