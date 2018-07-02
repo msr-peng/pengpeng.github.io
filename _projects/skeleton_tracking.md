@@ -13,20 +13,20 @@ This project is going to explore a avriety new technologies about skeleton track
      
 **System Requirements**(taken from [Microsoft SDK v1.8](https://www.microsoft.com/en-us/download/details.aspx?id=40278) website.)
      
-- Recommand Operating System and Architectures;
- - Ubuntu 14.04 or 16.04
+1. Recommand Operating System and Architectures;
+- Ubuntu 14.04 or 16.04
 
-- Recommended Hardware Configuration:
- - 32-bit (x86) or 64-bit (x64) processor
- - Dual-core 2.66-GHz or faster processor
- - Dedicated USB 2.0 bus
- - 2 GB RAM
- - A Microsoft Kinect for Windows sensor
+2. Recommended Hardware Configuration:
+- 32-bit (x86) or 64-bit (x64) processor
+- Dual-core 2.66-GHz or faster processor
+- Dedicated USB 2.0 bus
+- 2 GB RAM
+- A Microsoft Kinect for Windows sensor
 
-- Software Requirement:
- - OpenNI-Bin-Dev-Linux-x64-v1.5.7.10
- - NITE-Bin-Linux-x64-v1.5.2.23
- - SensorKinect093-Bin-Linux-x64-v5.1.2.1
+3. Software Requirement:
+- OpenNI-Bin-Dev-Linux-x64-v1.5.7.10
+- NITE-Bin-Linux-x64-v1.5.2.23
+- SensorKinect093-Bin-Linux-x64-v5.1.2.1
 
 Kinect V1 can simultaneously track 2 persons(within XBox 360) within 20 key joints points.
 This solution can given the skeleton tracking result as `tf` data format in ROS, and visualize corresponding joint coordinate in `rviz`.
@@ -65,21 +65,21 @@ Still work on to make OpenNI2 and NITE2 work compatiblely with Xtion PRO LIVE.
      
 **System Requirements**(taken from [Microsoft SDK 2.0](https://www.microsoft.com/en-us/download/details.aspx?id=44561) website.)
      
-- Supported Operating Systems and Architectures:
- - Windows 8 (x64)
- - Windows 10 (x64)
+1. Supported Operating Systems and Architectures:
+- Windows 8 (x64)
+- Windows 10 (x64)
 
-- Recommended Hardware Configuration:
- - 64 bit (x64) processor
- - 4GB Memory (or more)
- - I7 3.1 GHz (or higher)
- - Built-in USB 3.0 host controller (Intel or Renesas chipset)
- - DX11 capable graphics adapter
- - A Kinect v2 sensor, which includes a power hub and USB cabling
+2. Recommended Hardware Configuration:
+- 64 bit (x64) processor
+- 4GB Memory (or more)
+- I7 3.1 GHz (or higher)
+- Built-in USB 3.0 host controller (Intel or Renesas chipset)
+- DX11 capable graphics adapter
+- A Kinect v2 sensor, which includes a power hub and USB cabling
 
-- Software Requirements:
- - Visual Studio 2017
- - OpenCV 3.4.1 (recommended)
+3. Software Requirements:
+- Visual Studio 2017
+- OpenCV 3.4.1 (recommended)
 
 Kinect v2 can simultaneously track 6 persons within 25 key joints points, which is much better than Kinect v1. Moreover, it has more roboust skeleton tracking result of signle person than Kinect v1.
 This solution is developed by the combination of [Kinect for Windows SDK v2 C++ API](https://docs.microsoft.com/en-us/previous-versions/windows/kinect/hh855364(v%3dieb.10)) and [OpenCV 3.4.1](https://opencv.org/opencv-3-4-1.html) library, in [Visual Studio 2017](https://visualstudio.microsoft.com/zh-hans/vs/?rr=https%3A%2F%2Fwww.google.com%2F) IDE.
