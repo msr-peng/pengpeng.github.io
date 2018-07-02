@@ -53,7 +53,7 @@ Pros:
 
 Cons:
 - It can only track at most two person.
-- It only works fine when peopel in a appropriate distance from Kinect(larger than two meters).
+- It only works fine when peopel in a appropriate distance from Kinect(larger than one meter).
 - The tracking result not robust when person's limbs overlap highly.
 
 ####2. Xtion PRO LIVE + OpenNI2 + NITEv2 + Linux####
@@ -77,7 +77,7 @@ Still work on to make OpenNI2 and NITE2 work compatiblely with Xtion PRO LIVE.
 
 - Software Requirements:
  - Visual Studio 2017
- - OpenCV 3.4.1
+ - OpenCV 3.4.1 (recommended)
 
 Kinect v2 can simultaneously track 6 persons within 25 key joints points, which is much better than Kinect v1. Moreover, it has more roboust skeleton tracking result of signle person than Kinect v1.
 This solution is developed by the combination of [Kinect for Windows SDK v2 C++ API](https://docs.microsoft.com/en-us/previous-versions/windows/kinect/hh855364(v%3dieb.10)) and [OpenCV 3.4.1](https://opencv.org/opencv-3-4-1.html) library, in [Visual Studio 2017](https://visualstudio.microsoft.com/zh-hans/vs/?rr=https%3A%2F%2Fwww.google.com%2F) IDE.
