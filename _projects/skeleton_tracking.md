@@ -121,7 +121,6 @@ To learn how to build solution 3's development environment or access correspondi
 It can give robust skeleton tracking result given RGB video about real-world persons or even animation person:
 ![Real-time Person](/portfolio/public/images/Skeleton Tracking/skeleton_4_1.gif)
 
-![Animation Person](/portfolio/public/images/Skeleton Tracking/skeleton_4_2.gif)
 Evaluation of Solution 4:
 Pros:
 - It can tracking multiple persons.
