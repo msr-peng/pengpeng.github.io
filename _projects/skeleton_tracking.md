@@ -228,6 +228,7 @@ To learn how to build solution 3's development environment or access correspondi
 **Introduction**
 [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) is the first real-time multi-person system to jointly detect human body, hand, and facial keypoints(in total 130 keypoints) on single images.
 It can give robust skeleton tracking result given RGB video about real-world persons or even animation person:
+    
 ![Real-time Person](/portfolio/public/images/Skeleton Tracking/skeleton_4_1.gif)
     
 Evaluation of Solution 4 based on Solution 3:
@@ -256,4 +257,16 @@ I also compare the robust of skeleton tracking results between depth method (Sol
 I found that skeleton tracking solutions based on depth information is more robust to dark environment, while skeleton tracking solution based on RGB information does better in the first and third extreme condition.
 
 Here is the comparsion of skeleton tracking results:
+    
+**Obstruct in front of the person**:
+    
+Depth Solution (1 & 2 & 3)                                       |  RGB Solution (4)
+:---------------------------------------------------------------:|:----------------------------------------------------------------:
+![](/portfolio/public/images/Skeleton Tracking/obstruct.gif)     |  ![](/portfolio/public/images/Skeleton Tracking/obstruct_op.gif) 
+    
+**Dark environment**:
+    
+Depth Solution (1 & 2 & 3)                                       |  RGB Solution (4)
+:---------------------------------------------------------------:|:----------------------------------------------------------------:
+![](/portfolio/public/images/Skeleton Tracking/dark.gif)         |  ![](/portfolio/public/images/Skeleton Tracking/dark_op.gif)
 
