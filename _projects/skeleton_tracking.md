@@ -255,6 +255,7 @@ I also compare the robust of skeleton tracking results between depth method (Sol
 - Obstruct in front of the person
 - Dark environment
 - Overlap of multiple persons
+    
 I found that skeleton tracking solutions based on depth information is more robust to dark environment, while skeleton tracking solution based on RGB information does better in the first and third extreme condition.
 
 Here is the comparsion of skeleton tracking results:
