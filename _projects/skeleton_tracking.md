@@ -199,7 +199,8 @@ Pros:
 - Skeleton tracking result is a little more robust
 - Windows SDK v2 has a lot of C++ API, which support we acquire data more than skeleton tracking
 
-**My Work**
+**My Work**:
+    
 I extracted the color frame streams and the real-time data of skeleton tracking from Windows SDK v2 C++ API, and then drew the skeleton lines on color image streams within OpenCV. Here is the demo(The C++ source code is [here](https://github.com/KHeresy/KinectForWindows2Sample/blob/v2-naming/08cv_Body/cvBody.cpp). PS: window at the top left corner is the original depth & skeleton tracking result show in Kinect Studio v2.0):
 ![Kinect v2 result](/portfolio/public/images/Skeleton Tracking/skeleton_3.gif)
     
@@ -238,8 +239,13 @@ Cons:
 - High computational requirments.(It can only process approximate single image per 3 seconds in the condition of **Intel CORE i7 CPU**); On GTX 1060, I can arrive 10 fps; On 4*GTX 1080 Ti, I can arrive 15 fps.
 - The skeleton tracking result is not so robust when light condition is bad.
 
-**My Work**
+**My Work**:
+    
 I employed OpenPose C++ APIs to make it do inference on 2D RGB streams, then got the pixel coordinate of skeleton keypoints. Then I applied camera instrinc parameter to do some simple geometry transformation, finally get the 3D skeleton keypoints information, and visualized on Rviz.
+    
+Here is the demo of 3D skeleton tracking by OpenPose:
+    
+![OpenPose 3D](/portfolio/public/images/Skeleton Tracking/openpose_3d.gif)
     
 ---------------------------------------------------------------
     
