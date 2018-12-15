@@ -21,20 +21,20 @@ In general, the selectivity of your skeleton tracking development enviroment mai
     
 The appearance of product is as follow, which is the earliest depth sensor product:
     
-![Kinect v1 camera](/portfolio/public/images/Skeleton Tracking/kinect_v1.png)
+![Kinect v1 camera](/portfolio/public/images/Skeleton Tracking/kinect_v1.jpg)
     
 To get the depth information, it employes [PrimeSense](https://en.wikipedia.org/wiki/PrimeSense)'s Light Coding technology. It actually has two product: [Kinect for XBOX 360](https://support.xbox.com/en-US/xbox-360/accessories/kinect-sensor-components) and [Kinect for Windows](https://support.xbox.com/en-US/xbox-on-windows/accessories/kinect-for-windows-info). The former can be used on XBOX 360 as well as PC, while the latter can only used on PC.
 If you choose Kinect (first generation), you have following development environment to choose:
     
 - **OpenNI 1**:
- - An very old development environment
- - Cross-platform
- - Need driver from 3rd party, which is exclusive with [Kinect for Windows SDK v1](https://www.microsoft.com/en-us/download/details.aspx?id=28782)
+  - An very old development environment
+  - Cross-platform
+  - Need driver from 3rd party, which is exclusive with [Kinect for Windows SDK v1](https://www.microsoft.com/en-us/download/details.aspx?id=28782)
 - **OpenNI 2**:
- - Need to work with [Kinect for Windows SDK v1](https://www.microsoft.com/en-us/download/details.aspx?id=28782), which means it can only work on system later than Windows 7
- - Can work with [OpenNI2-FreenectDriver](https://github.com/OpenKinect/libfreenect/tree/master/OpenNI2-FreenectDriver) on non-Windows platform
+  - Need to work with [Kinect for Windows SDK v1](https://www.microsoft.com/en-us/download/details.aspx?id=28782), which means it can only work on system later than Windows 7
+  - Can work with [OpenNI2-FreenectDriver](https://github.com/OpenKinect/libfreenect/tree/master/OpenNI2-FreenectDriver) on non-Windows platform
 - **Kinect for Windows SDK 1**:
- - Only can work on platform later than Windows 7
+  - Only can work on platform later than Windows 7
 **Note**: Kinect (first generation) can not work with [Kinect for Windows SDK 2](https://www.microsoft.com/en-us/download/details.aspx?id=44561)!
 
 ---------------------------------------------------------------
@@ -44,6 +44,25 @@ If you choose Kinect (first generation), you have following development environm
 The appearance of the product is as follow:
     
 ![Kinect v2 camera](/portfolio/public/images/Skeleton Tracking/kinect_v2.png)
+    
+It start to use Microsoft own Time of Flight technology to get depth information. It also has two version, one is specific for Windows, the other is specific for XBOX One, but they are generally the same in functionality. It has following development environment to choose:
+    
+- **Kinect for Windows SDK v2**:
+  - The most popular development environment for Kinect camera (second generation)
+  - Can only work with USB 3.0 port
+  - Can only work on platform latter than Windows 8
+
+- **OpenNI 2**:
+  - Can not work with NiTE, which means it can only get RGB & depth info, instead of skeleton keypoints info
+  - Can work with OpenNI2 and [libfreenect2](https://github.com/OpenKinect/libfreenect2) on non-Windows platform, but it still can not get skeleton info
+
+---------------------------------------------------------------
+
+**AUSU Xtion series or other PrimeSense depth sensor**
+    
+Those depth sensor in general work with OpenNI 1 or OpenNI2
+
+---------------------------------------------------------------
 
 ## Selected Solutions of Skeleton Tracking
     
