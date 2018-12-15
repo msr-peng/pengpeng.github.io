@@ -7,15 +7,22 @@ image: /portfolio/public/images/Skeleton Tracking/SkeletonTracing.jpg
 
 ## Project Goal
 This project is going to explore a avriety new technologies about skeleton tracking, and to benchmard their performance in terms of accuracy, computational effort, and hardware requirements. And then develop user manuals and tutorials to accompany the results.
-
+    
+## Related Hardware & Software Introduction
+In general, the selectivity of your skeleton tracking development enviroment mainly depends on which depth sensor you choose. So I list the possible of development environment based on different depth sensor in form of table as follow:
+    
+![possible development environment choice](/portfolio/public/images/hardware_software.png)
+    
+    
+## Selected Solutions of Skeleton Tracking
+    
 ### Solutions Github Repository
 [openni2_tracker](https://github.com/msr-peng/openni2_tracker)
 [kinect_v2_skeleton_tracking](https://github.com/msr-peng/kinect_v2_skeleton_tracking)
 [openpose_ros](https://github.com/msr-peng/openpose_ros)
-
-**Note**: I didn't create github repository for the first solution (which I believe is easy enough to follow 3rd part instruction).
-
-## Selected Solutions of skeleton tracking
+    
+**Note**: I didn't create github repository for the first solution (which I believe is easy enough to follow 3rd party instruction).
+    
 #### 1. XBOX 360 Kinect + OpenNi_tracker + NITE + Linux
      
 **System Requirements**(taken from [Microsoft SDK v1.8](https://www.microsoft.com/en-us/download/details.aspx?id=40278) website.)
@@ -66,7 +73,8 @@ Cons:
 - It can only track at most two person.
 - It only works fine when peopel in a appropriate distance from Kinect(larger than one meter).
 - The tracking result not robust when person's limbs overlap highly.
-
+- At the start of skeleton tracking, use need to do "surrendering" pose.
+   
 #### 2. Xtion PRO LIVE + OpenNI2 + NITEv2.2 + Linux
 
 **System Requirements**
