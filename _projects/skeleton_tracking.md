@@ -6,11 +6,13 @@ image: /portfolio/public/images/Skeleton Tracking/SkeletonTracing.jpg
 ---
     
 ## Project Goal
+    
 This project is going to explore a avriety new technologies about skeleton tracking, and to benchmard their performance in terms of accuracy, computational effort, and hardware requirements. And then develop user manuals and tutorials to accompany the results.
 
 -------------------------------------------------------------
 
 ## Related Hardware & Development Environment Introduction
+    
 In general, the selectivity of your skeleton tracking development enviroment mainly depends on which depth sensor you choose. So I list the possible development environment based on different depth sensors in form of table as follow:
     
 ![possible development environment choice](/portfolio/public/images/Skeleton Tracking/hardware_software.png)
@@ -100,9 +102,11 @@ Those depth sensor in general work with OpenNI 1 or OpenNI2
 - SensorKinect093-Bin-Linux-x64-v5.1.2.1
 
 **Build development environment**
+    
 Solution 1's development environment is the easist one to build. To learn how to build the development environment, please follow the guide [here](https://www.reddit.com/r/ROS/comments/6qejy0/openni_kinect_installation_on_kinetic_indigo/).
     
 **Introduction**
+    
 Kinect V1 can simultaneously track 2 persons(within XBox 360) within 20 key joints points.
 This solution can given the skeleton tracking result as `tf` data format in ROS, and visualize corresponding joint coordinate in `rviz`.
     
@@ -139,6 +143,7 @@ Cons:
 #### 2. Xtion PRO LIVE + OpenNI2 + NITEv2.2 + Linux
 
 **System Requirements**
+    
 1. Recommand Operating System and Architectures;
 - Ubuntu 14.04 or 16.04
 
@@ -154,6 +159,7 @@ Cons:
 - libopenni-sensor-primesense0
 
 **Build development environment**
+    
 To learn how to build solution 2's development environment or access corresponding docker image file directly, please follow my corresponding github repository [openni2_tracker](https://github.com/msr-peng/openni2_tracker).
 
 Evaluation of Solution 2 based on Solution 1:
@@ -188,9 +194,11 @@ Cons:
 - OpenCV 3.4.1 (recommended)
 
 **Build development environment**
+    
 To learn how to build solution 3's development environment, please follow my corresponding github repository [kinect_v2_skeleton_tracking](https://github.com/msr-peng/kinect_v2_skeleton_tracking).
      
 **Introduction**
+    
 Kinect v2 can simultaneously track 6 persons within 25 key joints points, which is much better than Kinect v1. Moreover, it has more roboust skeleton tracking result of signle person than Kinect v1.
 This solution is developed by the combination of [Kinect for Windows SDK v2 C++ API](https://docs.microsoft.com/en-us/previous-versions/windows/kinect/hh855364(v%3dieb.10)) and [OpenCV 3.4.1](https://opencv.org/opencv-3-4-1.html) library, in [Visual Studio 2017](https://visualstudio.microsoft.com/zh-hans/vs/?rr=https%3A%2F%2Fwww.google.com%2F) IDE.
     
@@ -222,11 +230,13 @@ I implemented the interaction between Windows and Linux within little lag by [ro
 3. CPU version:
 - Around 8GB of free RAM memory.
 4. Highly recommended: a CPU with at least 8 cores.
-
+    
 **Build development environment**
+    
 To learn how to build solution 3's development environment or access corresponding docker image file directly, please follow my corresponding github repository [openpose_ros](https://github.com/msr-peng/openpose_ros).
     
 **Introduction**
+    
 [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) is the first real-time multi-person system to jointly detect human body, hand, and facial keypoints(in total 130 keypoints) on single images.
 It can give robust skeleton tracking result given RGB video about real-world persons or even animation person:
     
@@ -236,11 +246,11 @@ Evaluation of Solution 4 based on Solution 3:
 Pros:
 - Even if there is some obstruct in front of the person, OpenPose can still give a good prediction of the skeleton keypoints behind the obstruct. 
 - It can tracking virtual person in games and animations.
-
+    
 Cons:
 - High computational requirments.(It can only process approximate single image per 3 seconds in the condition of **Intel CORE i7 CPU**); On GTX 1060, I can arrive 10 fps; On 4*GTX 1080 Ti, I can arrive 15 fps.
 - The skeleton tracking result is not so robust when light condition is bad.
-
+    
 **My Work**:
     
 I employed OpenPose C++ APIs to make it do inference on 2D RGB streams, then got the pixel coordinate of skeleton keypoints. Then I applied camera instrinc parameter to do some simple geometry transformation, finally get the 3D skeleton keypoints information, and visualized on Rviz.
@@ -252,13 +262,14 @@ Here is the demo of 3D skeleton tracking by OpenPose (approximately 15 fps withi
 ---------------------------------------------------------------
     
 ## Experiments & Comparison
+    
 I also compare the robust of skeleton tracking results between depth method (Solution 1 & 2 & 3) and RGB method (Solution 4) in following 3 extreme condition:
 - Obstruct in front of the person
 - Dark environment
 - Overlap of multiple persons
     
 I found that skeleton tracking solutions based on depth information is more robust to dark environment, while skeleton tracking solution based on RGB information does better in the first and third extreme condition.
-
+    
 Here is the comparsion of skeleton tracking results:
     
 **Obstruct in front of the person**:
@@ -280,7 +291,7 @@ In dark environment, depth solutions' performance are much better than RGB solut
 **Overlapping persons**:
     
 I didn' find MSR cohort to do experiments with me, but I believe OpenPose should do better in such condition, the reason is the same as obstruct.
-
+    
 ---------------------------------------------------------------
 
 ## Stretch Goal
