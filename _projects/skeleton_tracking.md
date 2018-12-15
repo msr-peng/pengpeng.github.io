@@ -15,8 +15,26 @@ In general, the selectivity of your skeleton tracking development enviroment mai
     
 ![possible development environment choice](/portfolio/public/images/Skeleton Tracking/hardware_software.png)
     
-
+---------------------------------------------------------------
+**Microsoft Kinect (first generation)**
     
+The appearance of product is as follow, which is the earliest depth sensor product:
+    
+![Kinect v1 camera](/portfolio/public/images/Skeleton Tracking/kinect_v1.png)
+    
+To get the depth information, it employes [PrimeSense](https://en.wikipedia.org/wiki/PrimeSense)'s Light Coding technology. It actually has two product: [Kinect for XBOX 360](https://support.xbox.com/en-US/xbox-360/accessories/kinect-sensor-components) and [Kinect for Windows](https://support.xbox.com/en-US/xbox-on-windows/accessories/kinect-for-windows-info). The former can be used on XBOX 360 as well as PC, while the latter can only used on PC.
+If you choose Kinect (first generation), you have following development environment to choose:
+    
+- **OpenNI 1**:
+ - An very old development environment
+ - Cross-platform
+ - Need driver from 3rd party, which is exclusive with [Kinect for Windows SDK v1](https://www.microsoft.com/en-us/download/details.aspx?id=28782)
+- **OpenNI 2**:
+ - Need to work with [Kinect for Windows SDK v1](https://www.microsoft.com/en-us/download/details.aspx?id=28782), which means it can only work on system later than Windows 7
+ - Can work with [OpenNI2-FreenectDriver](https://github.com/OpenKinect/libfreenect/tree/master/OpenNI2-FreenectDriver) on non-Windows platform
+- **Kinect for Windows SDK 1**:
+ - Only can work on platform later than Windows 7
+
 ## Selected Solutions of Skeleton Tracking
     
 ### Solutions Github Repository
