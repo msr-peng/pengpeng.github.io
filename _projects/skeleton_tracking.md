@@ -245,7 +245,7 @@ Cons:
     
 I employed OpenPose C++ APIs to make it do inference on 2D RGB streams, then got the pixel coordinate of skeleton keypoints. Then I applied camera instrinc parameter to do some simple geometry transformation, finally get the 3D skeleton keypoints information, and visualized on Rviz.
     
-Here is the demo of 3D skeleton tracking by OpenPose:
+Here is the demo of 3D skeleton tracking by OpenPose (approximately 15 fps within 4* GTX 1080 Ti):
     
 ![OpenPose 3D](/portfolio/public/images/Skeleton Tracking/openpose_3d.gif)
     
