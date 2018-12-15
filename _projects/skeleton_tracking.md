@@ -16,6 +16,7 @@ In general, the selectivity of your skeleton tracking development enviroment mai
 ![possible development environment choice](/portfolio/public/images/Skeleton Tracking/hardware_software.png)
     
 ---------------------------------------------------------------
+
 **Microsoft Kinect (first generation)**
     
 The appearance of product is as follow, which is the earliest depth sensor product:
@@ -34,6 +35,15 @@ If you choose Kinect (first generation), you have following development environm
  - Can work with [OpenNI2-FreenectDriver](https://github.com/OpenKinect/libfreenect/tree/master/OpenNI2-FreenectDriver) on non-Windows platform
 - **Kinect for Windows SDK 1**:
  - Only can work on platform later than Windows 7
+**Note**: Kinect (first generation) can not work with [Kinect for Windows SDK 2](https://www.microsoft.com/en-us/download/details.aspx?id=44561)!
+
+---------------------------------------------------------------
+
+**Microsoft Kinect (second generation)**
+    
+The appearance of the product is as follow:
+    
+![Kinect v2 camera](/portfolio/public/images/Skeleton Tracking/kinect_v2.png)
 
 ## Selected Solutions of Skeleton Tracking
     
