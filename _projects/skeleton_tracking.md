@@ -4,15 +4,18 @@ title: Modern Skeleton Tracking Benchmarking
 date: Jun 19, 2018
 image: /portfolio/public/images/Skeleton Tracking/SkeletonTracing.jpg
 ---
-
+    
 ## Project Goal
 This project is going to explore a avriety new technologies about skeleton tracking, and to benchmard their performance in terms of accuracy, computational effort, and hardware requirements. And then develop user manuals and tutorials to accompany the results.
-    
+
+-------------------------------------------------------------
+
 ## Related Hardware & Development Environment Introduction
 In general, the selectivity of your skeleton tracking development enviroment mainly depends on which depth sensor you choose. So I list the possible development environment based on different depth sensors in form of table as follow:
     
 ![possible development environment choice](/portfolio/public/images/Skeleton Tracking/hardware_software.png)
     
+
     
 ## Selected Solutions of Skeleton Tracking
     
