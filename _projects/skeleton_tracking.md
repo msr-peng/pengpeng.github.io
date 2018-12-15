@@ -8,6 +8,13 @@ image: /portfolio/public/images/Skeleton Tracking/SkeletonTracing.jpg
 ## Project Goal
 This project is going to explore a avriety new technologies about skeleton tracking, and to benchmard their performance in terms of accuracy, computational effort, and hardware requirements. And then develop user manuals and tutorials to accompany the results.
 
+### Solutions Github Repository
+[openni2_tracker](https://github.com/msr-peng/openni2_tracker)
+[kinect_v2_skeleton_tracking](https://github.com/msr-peng/kinect_v2_skeleton_tracking)
+[openpose_ros](https://github.com/msr-peng/openpose_ros)
+
+**Note**: I didn't create github repository for the first solution (which I believe is easy enough to follow 3rd part instruction).
+
 ## Selected Solutions of skeleton tracking
 #### 1. XBOX 360 Kinect + OpenNi_tracker + NITE + Linux
      
@@ -86,8 +93,7 @@ To learn how to build solution 2's development environment or access correspondi
 - OpenCV 3.4.1 (recommended)
 
 **Build development environment**
-To learn how to build solution 3's development environment or access corresponding docker image file directly, please follow my corresponding github repository [openpose_ros](https://github.com/msr-peng/openpose_ros).
-
+To learn how to build solution 3's development environment, please follow my corresponding github repository [kinect_v2_skeleton_tracking](https://github.com/msr-peng/kinect_v2_skeleton_tracking).
 
 Kinect v2 can simultaneously track 6 persons within 25 key joints points, which is much better than Kinect v1. Moreover, it has more roboust skeleton tracking result of signle person than Kinect v1.
 This solution is developed by the combination of [Kinect for Windows SDK v2 C++ API](https://docs.microsoft.com/en-us/previous-versions/windows/kinect/hh855364(v%3dieb.10)) and [OpenCV 3.4.1](https://opencv.org/opencv-3-4-1.html) library, in [Visual Studio 2017](https://visualstudio.microsoft.com/zh-hans/vs/?rr=https%3A%2F%2Fwww.google.com%2F) IDE.
@@ -96,9 +102,20 @@ I extracted the color frame streams and the real-time data of skeleton tracking 
 My next step is to implement the interaction between Windows and Linux, and finally realize the 3-D skeleton reconstruction on Rviz. A potential solution to realize the interatcion between Windows and ROS on Linux is by [rosserial_windows](http://wiki.ros.org/rosserial_windows) package.
 
 #### 4. OpenPose + RGBD Camera/FLIR Camera + Windows/Linux
+**System Requirements**(taken from [OpenPose Github Page](https://github.com/CMU-Perceptual-Computing-Lab/openpose))
+1. Nvidia GPU version:
+- NVIDIA graphics card with at least 1.6 GB available (the `nvidia-smi` command checks the available GPU memory in Ubuntu)l
+- At least 2.5 GB of free RAM memory for BODY_25 model or 2 GB for COCO model (assuming cuDNN installed).
+- Highly recommended: cuDNN.
+2. AMD GPU version:
+- Vega series graphics card
+- At least 2 GB of free RAM memory.
+3. CPU version:
+- Around 8GB of free RAM memory.
+4. Highly recommended: a CPU with at least 8 cores.
 
 **Build development environment**
-To learn how to build solution 4's development environment, please follow my corresponding github repository [kinect_v2_skeleton_tracking](https://github.com/msr-peng/kinect_v2_skeleton_tracking).
+To learn how to build solution 3's development environment or access corresponding docker image file directly, please follow my corresponding github repository [openpose_ros](https://github.com/msr-peng/openpose_ros).
 
 [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) is the first real-time multi-person system to jointly detect human body, hand, and facial keypoints(in total 130 keypoints) on single images.
 It can give robust skeleton tracking result given RGB video about real-world persons or even animation person:
