@@ -61,15 +61,19 @@ It start to use Microsoft own Time of Flight technology to get depth information
 **AUSU Xtion series or other PrimeSense depth sensor**
     
 Those depth sensor in general work with OpenNI 1 or OpenNI2
+    
+![Xtion Pro Live camera](/portfolio/public/images/Skeleton Tracking/xtion_pro_live.jpg)
 
 ---------------------------------------------------------------
 
 ## Selected Solutions of Skeleton Tracking
     
 ### Solutions Github Repository
-[openni2_tracker](https://github.com/msr-peng/openni2_tracker)
-[kinect_v2_skeleton_tracking](https://github.com/msr-peng/kinect_v2_skeleton_tracking)
-[openpose_ros](https://github.com/msr-peng/openpose_ros)
+1. [openni2_tracker](https://github.com/msr-peng/openni2_tracker)
+    
+2. [kinect_v2_skeleton_tracking](https://github.com/msr-peng/kinect_v2_skeleton_tracking)
+    
+3. [openpose_ros](https://github.com/msr-peng/openpose_ros)
     
 **Note**: I didn't create github repository for the first solution (which I believe is easy enough to follow 3rd party instruction).
     
