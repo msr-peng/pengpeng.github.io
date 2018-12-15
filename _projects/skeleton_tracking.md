@@ -69,6 +69,21 @@ Cons:
 
 #### 2. Xtion PRO LIVE + OpenNI2 + NITEv2.2 + Linux
 
+**System Requirements**
+1. Recommand Operating System and Architectures;
+- Ubuntu 14.04 or 16.04
+
+2. Recommended Hardware Configuration:
+- 32-bit (x86) or 64-bit (x64) processor
+- Dual-core 2.66-GHz or faster processor
+- Dedicated USB 2.0 bus
+- 2 GB RAM
+
+3. Software Requirement:
+- OpenNI-Bin-Dev-Linux-x64-v2
+- NITE-Bin-Linux-x64-v2.2
+- libopenni-sensor-primesense0
+
 **Build development environment**
 To learn how to build solution 2's development environment or access corresponding docker image file directly, please follow my corresponding github repository [openni2_tracker](https://github.com/msr-peng/openni2_tracker).
 
