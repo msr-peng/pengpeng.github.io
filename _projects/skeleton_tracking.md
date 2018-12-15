@@ -28,6 +28,9 @@ This project is going to explore a avriety new technologies about skeleton track
 - NITE-Bin-Linux-x64-v1.5.2.23
 - SensorKinect093-Bin-Linux-x64-v5.1.2.1
 
+**Build development environment**
+Solution 1's development environment is the easist one to build. To learn how to build the development environment, please follow the guide [here](https://www.reddit.com/r/ROS/comments/6qejy0/openni_kinect_installation_on_kinetic_indigo/).
+
 Kinect V1 can simultaneously track 2 persons(within XBox 360) within 20 key joints points.
 This solution can given the skeleton tracking result as `tf` data format in ROS, and visualize corresponding joint coordinate in `rviz`.
 ![Real-time Person](/portfolio/public/images/Skeleton Tracking/skeleton_1.gif)
@@ -57,9 +60,10 @@ Cons:
 - It only works fine when peopel in a appropriate distance from Kinect(larger than one meter).
 - The tracking result not robust when person's limbs overlap highly.
 
-#### 2. Xtion PRO LIVE + OpenNI2 + NITEv2 + Linux
-     
-Still work on to make OpenNI2 and NITE2 work compatiblely with Xtion PRO LIVE.
+#### 2. Xtion PRO LIVE + OpenNI2 + NITEv2.2 + Linux
+
+**Build development environment**
+To learn how to build solution 2's development environment or access corresponding docker image file directly, please follow my corresponding github repository [openni2_tracker](https://github.com/msr-peng/openni2_tracker).
 
 #### 3. XBOX ONE Kinect + Microsoft SDK + OpenCV + Windows
      
@@ -81,6 +85,10 @@ Still work on to make OpenNI2 and NITE2 work compatiblely with Xtion PRO LIVE.
 - Visual Studio 2017
 - OpenCV 3.4.1 (recommended)
 
+**Build development environment**
+To learn how to build solution 3's development environment or access corresponding docker image file directly, please follow my corresponding github repository [openpose_ros](https://github.com/msr-peng/openpose_ros).
+
+
 Kinect v2 can simultaneously track 6 persons within 25 key joints points, which is much better than Kinect v1. Moreover, it has more roboust skeleton tracking result of signle person than Kinect v1.
 This solution is developed by the combination of [Kinect for Windows SDK v2 C++ API](https://docs.microsoft.com/en-us/previous-versions/windows/kinect/hh855364(v%3dieb.10)) and [OpenCV 3.4.1](https://opencv.org/opencv-3-4-1.html) library, in [Visual Studio 2017](https://visualstudio.microsoft.com/zh-hans/vs/?rr=https%3A%2F%2Fwww.google.com%2F) IDE.
 I extracted the color frame streams and the real-time data of skeleton tracking from Windows SDK v2 C++ API, and then drew the skeleton lines on color image streams within OpenCV. Here is the demo(The C++ source code is [here](https://github.com/KHeresy/KinectForWindows2Sample/blob/v2-naming/08cv_Body/cvBody.cpp). PS: window at the top left corner is the original depth & skeleton tracking result show in Kinect Studio v2.0):
@@ -88,6 +96,10 @@ I extracted the color frame streams and the real-time data of skeleton tracking 
 My next step is to implement the interaction between Windows and Linux, and finally realize the 3-D skeleton reconstruction on Rviz. A potential solution to realize the interatcion between Windows and ROS on Linux is by [rosserial_windows](http://wiki.ros.org/rosserial_windows) package.
 
 #### 4. OpenPose + RGBD Camera/FLIR Camera + Windows/Linux
+
+**Build development environment**
+To learn how to build solution 4's development environment, please follow my corresponding github repository [kinect_v2_skeleton_tracking](https://github.com/msr-peng/kinect_v2_skeleton_tracking).
+
 [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) is the first real-time multi-person system to jointly detect human body, hand, and facial keypoints(in total 130 keypoints) on single images.
 It can give robust skeleton tracking result given RGB video about real-world persons or even animation person:
 ![Real-time Person](/portfolio/public/images/Skeleton Tracking/skeleton_4_1.gif)
@@ -97,6 +109,7 @@ Evaluation of Solution 4:
 Pros:
 - It can tracking multiple persons.
 - Skeleton tracking result is pretty robust to varying environmental conditions.(limbs overlap, lighting, clothing).
+- Even if there is some obstruct in front of the person, OpenPose can still give a good prediction of the skeleton keypoints behind the obstruct. 
 - It can tracking virtual person in games and animations.
 
 Cons:
@@ -105,6 +118,3 @@ Cons:
 My following goal for this solution is to gets the coordinate data of user key points, thus realize 3-D reconstruction of human body, and finally user-mimicking deomstration(Baxter). By far I found there are three potential solutions(list by hardware requirements):
 - Assume the person's body faced the camera directly(the plane where the person's body on is perfect vertical to the line formmed by the camera and person), so a demension of body joints' coordinates is fixed. Then we get the coordinates of body joints directly from image pixel, and feed it into **Baxter**. [Here](https://www.youtube.com/watch?v=wNLuZNLBegw) is similar work on **Robotis**.(RGB camera is enough)
 - Use RGBD to get the registration point cloud of user, and then use the camera intrinsics and extrinsics to map the 2D pixel coordinates to corresponding 3D points in the camera space. [Here](https://github.com/IntelRealSense/librealsense/blob/master/include/librealsense2/rsutil.h)  is associated 2D to 3D projection functions of **Intel RealSense**.(RGBD camera is required)
-- Implement built-in [OpenPose 3-D Reconstruction](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/3d_reconstruction_module.md) directly, and get the data of joints coordinate and feed it into **Baxter**.(FLIR Camera is required, and can only track one person)
-
-The requirement of hardware is increasingly higher in order, but the results of joints coordinate is also increasingly higher.
