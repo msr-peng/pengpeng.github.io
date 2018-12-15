@@ -250,6 +250,7 @@ Here is the demo of 3D skeleton tracking by OpenPose:
     
 ---------------------------------------------------------------
     
+## Experiments & Comparison
 I also compare the robust of skeleton tracking results between depth method (Solution 1 & 2 & 3) and RGB method (Solution 4) in following 3 extreme condition:
 - Obstruct in front of the person
 - Dark environment
@@ -264,9 +265,22 @@ Depth Solution (1 & 2 & 3)                                       |  RGB Solution
 :---------------------------------------------------------------:|:----------------------------------------------------------------:
 ![](/portfolio/public/images/Skeleton Tracking/obstruct.gif)     |  ![](/portfolio/public/images/Skeleton Tracking/obstruct_op.gif) 
     
+Apparently OpenPose performance is much better than depth solution when there is obstruct in front of person. That's because depth solutions use object nearest it to judge whether it's person or not, so obstruct in front of people can fool depth solution very easily. While OpenPose use RGB information to judge, it can infer the body parts behind the obstruct with support of neural network.
+    
 **Dark environment**:
     
 Depth Solution (1 & 2 & 3)                                       |  RGB Solution (4)
 :---------------------------------------------------------------:|:----------------------------------------------------------------:
 ![](/portfolio/public/images/Skeleton Tracking/dark.gif)         |  ![](/portfolio/public/images/Skeleton Tracking/dark_op.gif)
+    
+In dark environment, depth solutions' performance are much better than RGB solution (OpenPose). That because when light is not enough, it will cause huge disturb on RGB information, while it has no influence on depth information at all.
+    
+**Overlapping persons**:
+    
+I didn' find MSR cohort to do experiments with me, but I believe OpenPose should do better in such condition, the reason is the same as obstruct.
 
+---------------------------------------------------------------
+
+## Stretch Goal
+    
+My stretch goal is to do skeleton tracking in large scene by fusion the data provided by asynchronous OpenPose clients. [Here](https://arxiv.org/pdf/1710.06235.pdf) is realed paper.
