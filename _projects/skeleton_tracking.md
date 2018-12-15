@@ -105,6 +105,7 @@ Solution 1's development environment is the easist one to build. To learn how to
 **Introduction**
 Kinect V1 can simultaneously track 2 persons(within XBox 360) within 20 key joints points.
 This solution can given the skeleton tracking result as `tf` data format in ROS, and visualize corresponding joint coordinate in `rviz`.
+    
 ![Real-time Person](/portfolio/public/images/Skeleton Tracking/skeleton_1.gif)
 
 Comparison between official development package and unofficial development package for Kinect v1:
