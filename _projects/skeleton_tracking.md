@@ -243,4 +243,11 @@ I employed OpenPose C++ APIs to make it do inference on 2D RGB streams, then got
     
 ---------------------------------------------------------------
     
-I also com
+I also compare the robust of skeleton tracking results between depth method (Solution 1 & 2 & 3) and RGB method (Solution 4) in following 3 extreme condition:
+- Obstruct in front of the person
+- Dark environment
+- Overlap of multiple persons
+I found that skeleton tracking solutions based on depth information is more robust to dark environment, while skeleton tracking solution based on RGB information does better in the first and third extreme condition.
+
+Here is the comparsion of skeleton tracking results:
+
