@@ -215,8 +215,7 @@ Pros:
 
 **My Work**:
     
-I extracted color frames streams and real-time data of skeleton tracking using Windows SDK v2 C++ APIs, and drew the skeleton lines on color images streams within OpenCV. Here is the demo(The C++ source code is [here](https://github.com/KHeresy/KinectForWindows2Sample/blob/v2-naming/08cv_Body/cvBody.cpp). Note: window at the top left corner is the original depth & skeleton tracking result shown in Kinect Studio v2.0):
-![Kinect v2 result](/portfolio/public/images/Skeleton Tracking/skeleton_3.gif)
+I extracted color frames streams and real-time data of skeleton tracking using Windows SDK v2 C++ APIs, and drew the skeleton lines on color images streams within OpenCV. Here is the demo(The C++ source code is [here](https://github.com/KHeresy/KinectForWindows2Sample/blob/v2-naming/08cv_Body/cvBody.cpp). Note: window at the top left corner is the original depth & skeleton tracking result shown in Kinect Studio v2.0)
     
 I implemented interaction between Windows and Linux minimize lag by using [rosserial_windows](http://wiki.ros.org/rosserial_windows) package. I then got 3D skeleton tracking date from Windows Kinect v2, and visualized them on Ubuntu Rviz.
     
@@ -243,9 +242,6 @@ To learn how to build solution 3's development environment or access correspondi
 **Introduction**
     
 [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) is the first real-time multi-person system to jointly detect human body, hand, and facial keypoints(in total 130 keypoints) on single images.
-It outputs robust skeleton tracking results given RGB video about real-world or animated persnos:
-    
-![Real-time Person](/portfolio/public/images/Skeleton Tracking/skeleton_4_1.gif)
     
 Evaluation of Solution 4 versus 3:
 Pros:
@@ -259,10 +255,6 @@ Cons:
 **My Work**:
     
 I employed OpenPose C++ APIs to do inference on 2D RGB streams, then got pixel coordinates of skeleton keypoints. I then applied camera instrinc parameters to do geometry transformation, got 3D skeleton keypoints information, and visualized on Rviz.
-    
-3D skeleton tracking by OpenPose (approximately 15 fps within 4* GTX 1080 Ti):
-    
-![OpenPose 3D](/portfolio/public/images/Skeleton Tracking/openpose_3d.gif)
     
 ---------------------------------------------------------------
     
