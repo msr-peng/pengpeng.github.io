@@ -220,7 +220,7 @@ I implemented interaction between Windows and Linux minimize lag by using [rosse
     
 **System Requirements**([OpenPose Github Page](https://github.com/CMU-Perceptual-Computing-Lab/openpose))
 1. Nvidia GPU version:
-- NVIDIA graphics card with at least 1.6 GB available (the `nvidia-smi` command checks the available GPU memory in Ubuntu)l
+- NVIDIA graphics card with at least 1.6 GB available (the `nvidia-smi` command checks the available GPU memory in Ubuntu).
 - At least 2.5 GB of free RAM memory for BODY_25 model or 2 GB for COCO model (assuming cuDNN installed).
 - Highly recommended: cuDNN.
 2. AMD GPU version:
