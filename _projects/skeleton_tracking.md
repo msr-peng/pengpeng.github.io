@@ -34,7 +34,7 @@ The following are development environments for Kinect first generation:
     - Cross-platform.
     - Requires 3rd party driver which is incompatible with [Kinect for Windows SDK v1](https://www.microsoft.com/en-us/download/details.aspx?id=28782).
 - **OpenNI 2**:
-    - Rquires [Kinect for Windows SDK v1](https://www.microsoft.com/en-us/download/details.aspx?id=28782), and Windows 7 or greater.
+    - Requires [Kinect for Windows SDK v1](https://www.microsoft.com/en-us/download/details.aspx?id=28782), and Windows 7 or greater.
     - Works with [OpenNI2-FreenectDriver](https://github.com/OpenKinect/libfreenect/tree/master/OpenNI2-FreenectDriver) on non-Windows platforms.
 - **Kinect for Windows SDK 1**:
     - Requires Windows 7 or greater.
