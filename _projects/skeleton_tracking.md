@@ -23,14 +23,13 @@ In general, the selectivity of skeleton tracking development enviroment depends 
     
 ![possible development environment choice](/portfolio/public/images/Skeleton Tracking/hardware_software.png)
     
+Kinect V1                                                         |  Kinect V2                                                       |  AUSU Xtion Pro Live
+:----------------------------------------------------------------:|:----------------------------------------------------------------:|:----------------------------------------------------------------:
+![](/portfolio/public/images/Skeleton Tracking/kinect_v1.png)     |  ![](/portfolio/public/images/Skeleton Tracking/kinect_v2.png)   |  ![](/portfolio/public/images/Skeleton Tracking/xtion_pro_live.jpg) 
+    
 ---------------------------------------------------------------
 
-**Microsoft Kinect (first generation)**
-    
-The first commercial depth sensor product:
-    
-![Kinect v1 camera](/portfolio/public/images/Skeleton Tracking/kinect_v1.jpg)
-    
+**Microsoft Kinect (first generation)**    
 To get the depth information, it employes [PrimeSense](https://en.wikipedia.org/wiki/PrimeSense)'s Light Coding technology. There is two version of products: [Kinect for XBOX 360](https://support.xbox.com/en-US/xbox-360/accessories/kinect-sensor-components) and [Kinect for Windows](https://support.xbox.com/en-US/xbox-on-windows/accessories/kinect-for-windows-info). The former can be used on XBOX 360 and a PC, while the latter is PC only.
 The following are development environments for Kinect first generation:
     
@@ -48,10 +47,7 @@ The following are development environments for Kinect first generation:
 
 ---------------------------------------------------------------
 
-**Microsoft Kinect (second generation)**
-    
-![Kinect v2 camera](/portfolio/public/images/Skeleton Tracking/kinect_v2.png)
-    [[[[[[[[[[[[[=-=
+**Microsoft Kinect (second generation)** 
 The second generation uses Microsoft own Time of Flight technology for depth generation. There has two version, one is specific for Windows, the other is specific for XBOX One, they generally share the same functionality.
     
 Development environemnts:
@@ -69,9 +65,6 @@ Development environemnts:
 ---------------------------------------------------------------
 
 **AUSU Xtion series or other PrimeSense depth sensor**
-    
-![Xtion Pro Live camera](/portfolio/public/images/Skeleton Tracking/xtion_pro_live.jpg)
-    
 Requires OpenNI 1 or OpenNI2.
 
 ---------------------------------------------------------------
