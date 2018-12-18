@@ -7,13 +7,14 @@ image: /portfolio/public/images/Skeleton Tracking/SkeletonTracing.jpg
     
 ## Project Goal
     
-This project is going to explore a avriety new technologies about skeleton tracking, and to benchmard their performance in terms of accuracy, computational effort, and hardware requirements. And then develop user manuals and tutorials to accompany the results.
+This project explore a variety of new skeleton tracking technologies. It benchmarks
+ accuracy, computing resources, and hardware requirements. The project develops user manuals and tutorials to accompany the results.
 
 -------------------------------------------------------------
 
-## Related Hardware & Development Environment Introduction
+## Hardware & Development Environment
     
-In general, the selectivity of your skeleton tracking development enviroment mainly depends on which depth sensor you choose. So I list the possible development environment based on different depth sensors in form of table as follow:
+In general, the selectivity of skeleton tracking development enviroment depends on the depth sensor you choose. The following is a table of development environments based on different depth sensors.
     
 ![possible development environment choice](/portfolio/public/images/Skeleton Tracking/hardware_software.png)
     
@@ -21,34 +22,31 @@ In general, the selectivity of your skeleton tracking development enviroment mai
 
 **Microsoft Kinect (first generation)**
     
-The appearance of product is as follow, which is the earliest depth sensor product:
+The first commercial depth sensor product:
     
 ![Kinect v1 camera](/portfolio/public/images/Skeleton Tracking/kinect_v1.jpg)
     
-To get the depth information, it employes [PrimeSense](https://en.wikipedia.org/wiki/PrimeSense)'s Light Coding technology. It actually has two product: [Kinect for XBOX 360](https://support.xbox.com/en-US/xbox-360/accessories/kinect-sensor-components) and [Kinect for Windows](https://support.xbox.com/en-US/xbox-on-windows/accessories/kinect-for-windows-info). The former can be used on XBOX 360 as well as PC, while the latter can only used on PC.
-If you choose Kinect (first generation), you have following development environment to choose:
+To get the depth information, it employes [PrimeSense](https://en.wikipedia.org/wiki/PrimeSense)'s Light Coding technology. There is two version of products: [Kinect for XBOX 360](https://support.xbox.com/en-US/xbox-360/accessories/kinect-sensor-components) and [Kinect for Windows](https://support.xbox.com/en-US/xbox-on-windows/accessories/kinect-for-windows-info). The former can be used on XBOX 360 and a PC, while the latter is PC only.
+The following are development environments for Kinect first generation:
     
 - **OpenNI 1**:
-    - An very old development environment
-    - Cross-platform
-    - Need driver from 3rd party, which is exclusive with [Kinect for Windows SDK v1](https://www.microsoft.com/en-us/download/details.aspx?id=28782)
+    - A very old development environment.
+    - Cross-platform.
+    - Requires 3rd party driver which is incompatible with [Kinect for Windows SDK v1](https://www.microsoft.com/en-us/download/details.aspx?id=28782).
 - **OpenNI 2**:
-    - Need to work with [Kinect for Windows SDK v1](https://www.microsoft.com/en-us/download/details.aspx?id=28782), which means it can only work on system later than Windows 7
-    - Can work with [OpenNI2-FreenectDriver](https://github.com/OpenKinect/libfreenect/tree/master/OpenNI2-FreenectDriver) on non-Windows platform
+    - Rquires [Kinect for Windows SDK v1](https://www.microsoft.com/en-us/download/details.aspx?id=28782), and Windows 7 or greater.
+    - Works with [OpenNI2-FreenectDriver](https://github.com/OpenKinect/libfreenect/tree/master/OpenNI2-FreenectDriver) on non-Windows platforms.
 - **Kinect for Windows SDK 1**:
-    - Only can work on platform later than Windows 7
+    - Requires Windows 7 or greater.
     
-**Note**: Kinect (first generation) can not work with [Kinect for Windows SDK 2](https://www.microsoft.com/en-us/download/details.aspx?id=44561)!
+**Note**: Kinect (first generation) incompatible with [Kinect for Windows SDK 2](https://www.microsoft.com/en-us/download/details.aspx?id=44561)!
 
 ---------------------------------------------------------------
 
 **Microsoft Kinect (second generation)**
-    
-The appearance of the product is as follow:
-    
 ![Kinect v2 camera](/portfolio/public/images/Skeleton Tracking/kinect_v2.png)
     
-It start to use Microsoft own Time of Flight technology to get depth information. It also has two version, one is specific for Windows, the other is specific for XBOX One, but they are generally the same in functionality. It has following development environment to choose:
+The second generation uses Microsoft own Time of Flight technology for depth generation. There has two version, one is specific for Windows, the other is specific for XBOX One, they generally share the same functionality. The following are development environments for Kinect second generation:
     
 - **Kinect for Windows SDK v2**:
     - The most popular development environment for Kinect camera (second generation)
@@ -72,7 +70,7 @@ Those depth sensor in general work with OpenNI 1 or OpenNI2
 ## Selected Solutions of Skeleton Tracking
     
 ### Solutions Github Repository
-1. [openni2_tracker](https://github.com/msr-peng/openni2_tracker)
+1. [openni2-tracker](https://github.com/msr-peng/openni2-tracker)
     
 2. [kinect_v2_skeleton_tracking](https://github.com/msr-peng/kinect_v2_skeleton_tracking)
     
@@ -160,7 +158,7 @@ Cons:
 
 **Build development environment**
     
-To learn how to build solution 2's development environment or access corresponding docker image file directly, please follow my corresponding github repository [openni2_tracker](https://github.com/msr-peng/openni2_tracker).
+To learn how to build solution 2's development environment or access corresponding docker image file directly, please follow my corresponding github repository [openni2-tracker](https://github.com/msr-peng/openni2-tracker).
 
 Evaluation of Solution 2 based on Solution 1:
     
