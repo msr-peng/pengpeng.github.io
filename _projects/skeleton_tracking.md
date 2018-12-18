@@ -4,6 +4,11 @@ title: Modern Skeleton Tracking Benchmarking
 date: Jun 19, 2018
 image: /portfolio/public/images/Skeleton Tracking/SkeletonTracing.jpg
 ---
+
+## Demo Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f2FjMg06Vbg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+-------------------------------------------------------------
     
 ## Project Goal
     
@@ -44,8 +49,9 @@ The following are development environments for Kinect first generation:
 ---------------------------------------------------------------
 
 **Microsoft Kinect (second generation)**
-![Kinect v2 camera](/portfolio/public/images/Skeleton Tracking/kinect_v2.png)
     
+![Kinect v2 camera](/portfolio/public/images/Skeleton Tracking/kinect_v2.png)
+    [[[[[[[[[[[[[=-=
 The second generation uses Microsoft own Time of Flight technology for depth generation. There has two version, one is specific for Windows, the other is specific for XBOX One, they generally share the same functionality.
     
 Development environemnts:
@@ -173,7 +179,7 @@ Cons:
 ---------------------------------------------------------------
     
 #### 3. XBOX ONE Kinect + Microsoft SDK + OpenCV + Windows
-     
+    
 **System Requirements**([Microsoft SDK 2.0](https://www.microsoft.com/en-us/download/details.aspx?id=44561) website.)
      
 1. Supported Operating Systems and Architectures:
