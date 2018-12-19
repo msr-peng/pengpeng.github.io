@@ -242,7 +242,7 @@ Pros:
 - Tracks virtual persons in games and animations.
     
 Cons:
-- High computational requirements.(It only process approximately one image every 3 seconds on a **Intel CORE i7 CPU**); On a GTX 1060, it performs 10 fps; On 4*GTX 1080 Tis, 15 fps.
+- High computational requirements.(It only process approximately one image every 3 seconds on a **Intel CORE i7 CPU**); On a GTX 1060, it performs 10 fps; On 2*GTX 1080 Tis, 15 fps.
 - The skeleton tracking result is not so robust when light conditions are bad.
     
 **My Work**:
