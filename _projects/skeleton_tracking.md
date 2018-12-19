@@ -132,7 +132,6 @@ Pros:
 - High refresh rate, low latency for tracking results.
 
 Cons:
-- Max two people.
 - Requires distence greater than one meter from Kinect.
 - Tracking no robust when person's limbs greatly overlap.
 - Rquires "psi" pose to initialize skeleton tracking.
