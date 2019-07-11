@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Dense 3D Mapping Based on ElasticFusion and Mask-RCNN
+title: MaskFusion_cpp: Dense 3D Mapping Based on ElasticFusion and Mask-RCNN
 date: Dec 14, 2018
 image: /portfolio/public/images/MaskFusion_cpp/maskfusion_cpp_output.png
 ---
@@ -15,5 +15,7 @@ The goal of this project is to build a simultaneously localization and **semanti
 
 - A bayesian update scheme to refresh the semantic segmentation results on existing surfels.
 
-All of C++ code would be open sourced after everything was done.
+The source code is [here](https://github.com/msr-peng/portfolio).
+
+The details about MaskFusion_cpp will be uploaded today.
 
