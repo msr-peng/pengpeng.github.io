@@ -2,7 +2,7 @@
 layout: project
 title: Dense 3D Mapping Based on ElasticFusion and Mask-RCNN
 date: Dec 14, 2018
-image: /portfolio/public/images/Semantic Mapping/semantic_map.png
+image: /portfolio/public/images/MaskFusion_cpp/maskfusion_cpp_output.png
 ---
 
 ## Project Goal
