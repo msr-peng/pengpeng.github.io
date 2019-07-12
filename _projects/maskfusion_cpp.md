@@ -1,6 +1,6 @@
 ---
 layout: project
-title: MaskFusion_cpp: Dense 3D Mapping Based on ElasticFusion and Mask-RCNN
+title: Dense 3D Mapping Based on ElasticFusion and Mask-RCNN
 date: Dec 14, 2018
 image: /portfolio/public/images/MaskFusion cpp/pipeline.png
 ---
@@ -11,7 +11,11 @@ image: /portfolio/public/images/MaskFusion cpp/pipeline.png
 -------------------------------------------------------------
      
 ## Project Goal
-The goal of this project is to build a simultaneously localization and semantic mapping (SLAM) system.
+    
+This project explore a variety of new skeleton tracking technologies. It benchmarks
+ accuracy, computing resources, and hardware requirements. The project develops user manuals and tutorials to accompany the results.
+
+-------------------------------------------------------------
 
 ### Pipeline:
 - A real-time dense visual SLAM ([ElasticFusion](https://github.com/mp3guy/ElasticFusion)) system to generate surfel map.
