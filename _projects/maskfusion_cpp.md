@@ -2,7 +2,7 @@
 layout: project
 title: MaskFusion_cpp: Dense 3D Mapping Based on ElasticFusion and Mask-RCNN
 date: Dec 14, 2018
-image: /Peng_Portfolio/public/images/MaskFusion cpp/pipeline.png
+image: /portfolio/public/images/MaskFusion cpp/pipeline.png
 ---
 
 ## Demo Video
