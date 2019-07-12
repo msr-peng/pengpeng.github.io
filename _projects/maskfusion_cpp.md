@@ -5,6 +5,11 @@ date: Dec 14, 2018
 image: /portfolio/public/images/MaskFusion cpp/pipeline.png
 ---
 
+## Demo Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=9d0Szh7lkns" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+-------------------------------------------------------------
+     
 ## Project Goal
 The goal of this project is to build a simultaneously localization and semantic mapping (SLAM) system.
 
